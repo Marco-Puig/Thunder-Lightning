@@ -1,4 +1,4 @@
-# Pokemon-Thunder/Lightning
+# Pokémon Thunder & Lightning!
 Open-Source Pokémon Game! Using PSDK as its backbone!
 
 ## Demo
