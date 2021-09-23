@@ -1,0 +1,207 @@
+0 : [VAR PKNICK(0000)]
+1 : [VAR PKNAME(0000)]
+2 : [VAR COLOR(0002)]♂[VAR COLOR(0000)]
+3 : [VAR COLOR(0001)]♀[VAR COLOR(0000)]
+4 : -
+5 : Lv.
+6 : [VAR NUM3(0000)]
+7 : DEX NO.
+8 : [VAR NUM3(0000)]
+9 : ???
+10 : HP
+11 : [VAR NUM3(0000)]
+12 : /
+13 : [VAR NUM3(0000)]
+14 : ATTACK
+15 : [VAR NUM3(0000)]
+16 : DEFENSE
+17 : [VAR NUM3(0000)]
+18 : SP. ATK
+19 : [VAR NUM3(0000)]
+20 : SP. DEF
+21 : [VAR NUM3(0000)]
+22 : SPEED
+23 : [VAR NUM3(0000)]
+24 : NATURE
+25 : [VAR ITEM1(0000)]
+26 : ABILITY
+27 : [VAR ABILITY(0000)]
+28 : ITEM
+29 : [VAR ITEM2(0000)]
+30 : MOVES LEARNED
+31 : [VAR MOVE(0000)]
+32 : [VAR MOVE(0000)]
+33 : [VAR MOVE(0000)]
+34 : [VAR MOVE(0000)]
+35 : [VAR BOX(0000)]
+36 : BATTLE BOX
+37 : DEPOSIT
+38 : WITHDRAW
+39 : MOVE
+40 : ITEM
+41 : SUMMARY
+42 : MARKING
+43 : SWITCH BOX
+44 : WALLPAPER
+45 : NAME
+46 : SCENERY 1
+47 : SCENERY 2
+48 : SCENERY 3
+49 : MISC.
+50 : SPECIAL
+51 : FOREST
+52 : CITY
+53 : DESERT
+54 : SAVANNA
+55 : CRAG
+56 : VOLCANO
+57 : SNOW
+58 : CAVE
+59 : BEACH
+60 : SEAFLOOR
+61 : RIVER
+62 : SKY
+63 : POKÉ CENTER
+64 : MACHINE
+65 : CHECKS
+66 : SIMPLE
+67 : SPECIAL 1
+68 : SPECIAL 2
+69 : SPECIAL 3
+70 : SPECIAL 4
+71 : SPECIAL 5
+72 : SPECIAL 6
+73 : SPECIAL 7
+74 : SPECIAL 8
+75 : NEXT
+76 : PREVIOUS
+77 : BACK
+78 : CONFIRM
+79 : BAG
+80 : GIVE
+81 : RELEASE
+82 : CANCEL
+83 : YES
+84 : NO
+85 : Continue operations?
+86 : [VAR PKNICK(0000)] is selected.
+87 : [~ 87]
+88 : You need to keep a healthy Pokémon!
+89 : Place it in which Box?
+90 : The Box is full.
+91 : Your party is full!
+92 : What do you want to do?
+93 : Jump to where?
+94 : Please pick a theme.
+95 : Pick a wallpaper.
+96 : Take th[VAR NUMBRNCH(0000,0102)]ise [VAR ITEM2(0000)]?
+97 : The Bag is full.
+98 : Placed the [VAR ITEM2(0000)] in the Bag.
+99 : A Pokémon Egg cannot hold an item.
+100 : Choose a mark.
+101 : Release this Pokémon?
+102 : [VAR PKNICK(0000)] was released.
+103 : Bye-bye, [VAR PKNICK(0000)]!
+104 : [VAR ITEM2(0000)] selected.
+105 : It can hold an item.
+106 : You cannot release a Pokémon Egg.
+107 : Your Battle Box is locked. You cannot move your Pokémon.
+108 : You cannot release the fused Kyurem.
+109 : [VAR PKNICK(0000)] came back!
+110 : Was it worried about you?
+111 : You cannot change it in the Battle Box!
+112 : [VAR PKNICK(0000)] is selected.
+113 : TRADE
+114 : DEPOSIT
+115 : CANCEL
+116 : It has learned an HM move. You cannot let it leave your party.
+117 : You need that Pokémon to get through your adventure!
+118 : The Pokémon cannot be traded.
+119 : Offer the Pokémon for trade?
+120 : YES
+121 : NO
+122 : You cannot offer a Pokémon Egg in trade.
+123 : [VAR NUM2(0000)]
+124 : You cannot include a Pokémon Egg!
+125 : Your Battle Box is locked. You cannot move your Pokémon.
+126 : Your Battle Box is locked. Items cannot be given or taken.
+127 : You can register Pokémon you use in battle.
+128 : Your Battle Box is locked. You cannot mark your Pokémon.
+129 : RESET
+130 : SEARCH
+131 : CANCEL
+132 : Pokémon
+133 : [VAR PKNAME(0000)]
+134 : Type 1
+135 : [VAR TYPE(0000)]
+136 : Type 2
+137 : [VAR TYPE(0000)]
+138 : Move
+139 : [VAR MOVE(0000)]
+140 : TMs & HMs
+141 : [VAR MOVE(0000)]
+142 : Ability
+143 : [VAR ABILITY(0000)]
+144 : Nature
+145 : [VAR ITEM1(0000)]
+146 : Gender
+147 : ♂
+148 : ♀
+149 : Unknown
+150 : -
+151 : Held Item
+152 : [VAR ITEM2(0000)]
+153 : Mark
+154 : Holding Item
+155 : Not Holding Item
+156 : Choose the conditions, and press “SEARCH” to turn on the filter.
+157 : Filter Pokémon
+158 : Choose the first letter of the Pokémon’s name.
+159 : Choose a Pokémon.
+160 : Choose Type 1.
+161 : Choose Type 2.
+162 : Choose the first letter of the move.
+163 : You can check whether any Pokémon can use the selected TM or HM.
+164 : Please choose a Nature.
+165 : Please choose the first letter of an Ability.
+166 : Please choose a gender.
+167 : You can check Pokémon with items.
+168 : You can check Pokémon with marks.
+169 : [VAR PKNAME(0000)]
+170 : [VAR TYPE(0001)]
+171 : [VAR TYPE(0002)]
+172 : [~ 172]
+173 : [VAR MOVE(0000)]
+174 : [VAR ITEM1(0000)]
+175 : [VAR ABILITY(0000)]
+176 : Every stat grows in a balanced way.
+177 : Attack grows faster. Defense grows slower.
+178 : Attack grows faster. Speed grows slower.
+179 : Attack grows faster. Sp. Atk grows slower.
+180 : Attack grows faster. Sp. Def grows slower.
+181 : Defense grows faster. Attack grows slower.
+182 : Every stat grows in a balanced way.
+183 : Defense grows faster. Speed grows slower.
+184 : Defense grows faster. Sp. Atk grows slower.
+185 : Defense grows faster. Sp. Def grows slower.
+186 : Speed grows faster. Attack grows slower.
+187 : Speed grows faster. Defense grows slower.
+188 : Every stat grows in a balanced way.
+189 : Speed grows faster. Sp. Atk grows slower.
+190 : Speed grows faster. Sp. Def grows slower.
+191 : Sp. Atk grows faster. Attack grows slower.
+192 : Sp. Atk grows faster. Defense grows slower.
+193 : Sp. Atk grows faster. Speed grows slower.
+194 : Every stat grows in a balanced way.
+195 : Sp. Atk grows faster. Sp. Def grows slower.
+196 : Sp. Def grows faster. Attack grows slower.
+197 : Sp. Def grows faster. Defense grows slower.
+198 : Sp. Def grows faster. Speed grows slower.
+199 : Sp. Def grows faster. Sp. Atk grows slower.
+200 : Every stat grows in a balanced way.
+201 : It’s a special Pokémon. You cannot trade it!
+202 : Please choose a move.
+203 : Please choose an Ability.
+204 : The Pokémon has a special item. You cannot offer it for trade.
+205 : OT
+206 : [VAR TRNAME(0000)]

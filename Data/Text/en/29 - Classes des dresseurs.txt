@@ -1,0 +1,280 @@
+0 : Pokémon Trainer
+1 : Pokémon Trainer
+2 : Youngster
+3 : Lass
+4 : Leader
+5 : Sky Trainer
+6 : Sky Trainer
+7 : Waitress
+8 : Ace Duo
+9 : Ace Trainer
+10 : Ace Trainer
+11 : Preschooler
+12 : Preschooler
+13 : Hex Maniac
+14 : Lady
+15 : Beauty
+16 : Rich Boy
+17 : Swimmer ♂
+18 : Team Flare
+19 : Team Flare
+20 : Team Flare
+21 : Team Flare
+22 : Team Flare
+23 : Black Belt
+24 : Tourist
+25 : Garçon
+26 : Artist Family
+27 : Artist
+28 : Artist
+29 : Scientist
+30 : Scientist
+31 : Psychic
+32 : Worker
+33 : Worker
+34 : Butler
+35 : Elite Four
+36 : Elite Four
+37 : Elite Four
+38 : Elite Four
+39 : Leader
+40 : Leader
+41 : Leader
+42 : Leader
+43 : Leader
+44 : Leader
+45 : Leader
+46 : Brains & Brawn
+47 : Punk Guy
+48 : Schoolgirl
+49 : Schoolboy
+50 : Poké Fan
+51 : Poké Fan
+52 : Poké Fan Family
+53 : Champion
+54 : Fisherman
+55 : Pokémon Trainer
+56 : Pokémon Trainer
+57 : Pokémon Trainer
+58 : Ace Trainer
+59 : Ace Trainer
+60 : Gardener
+61 : Backpacker
+62 : Punk Girl
+63 : Battle Girl
+64 : Battle Chatelaine
+65 : Battle Chatelaine
+66 : Battle Chatelaine
+67 : Battle Chatelaine
+68 : Tourist
+69 : Tourist
+70 : Swimmer ♀
+71 : Mysterious Sisters
+72 : Twins
+73 : Furisode Girl
+74 : Furisode Girl
+75 : Furisode Girl
+76 : Furisode Girl
+77 : Team Flare
+78 : Team Flare
+79 : Team Flare
+80 : Team Aqua
+81 : Team Flare Boss
+82 : Veteran
+83 : Veteran
+84 : Rising Star
+85 : Rising Star
+86 : Pokémon Breeder
+87 : Pokémon Breeder
+88 : Pokémon Ranger
+89 : Pokémon Ranger
+90 : Owner
+91 : Madame
+92 : Swimmers
+93 : Monsieur
+94 : Maid
+95 : Fairy Tale Girl
+96 : Hiker
+97 : Honeymooners
+98 : Chef
+99 : Rangers
+100 : Roller Skater
+101 : Roller Skater
+102 : Pokémon Trainer
+103 : Pokémon Trainer
+104 : Pokémon Trainer
+105 : Pokémon Professor
+106 : Punk Couple
+107 : Team Flare
+108 : Team Flare
+109 : Pokémon Trainer
+110 : Pokémon Trainer
+111 : Driver
+112 : Driver
+113 : Driver
+114 : Lumiose Gang Member
+115 : Lumiose Gang Member
+116 : Suspicious Lady
+117 : Suspicious Woman
+118 : Suspicious Child
+119 : Pokémon Trainer
+120 : Pokémon Trainer
+121 : Pokémon Trainer
+122 : Team Flare
+123 : Team Flare
+124 : Team Flare Boss
+125 : Successor
+126 : Leader
+127 : Pokémon Trainer
+128 : Pokémon Trainer
+129 : Youngster
+130 : Bug Catcher
+131 : Lass
+132 : Aroma Lady
+133 : Twins
+134 : Fisherman
+135 : Schoolkid
+136 : Schoolkid
+137 : Team Aqua
+138 : Swimmer ♂
+139 : Swimmer ♀
+140 : Guitarist
+141 : Sailor
+142 : Tuber
+143 : Triathlete
+144 : [~ 144]
+145 : Collector
+146 : Black Belt
+147 : Battle Girl
+148 : Ace Trainer
+149 : Ace Trainer
+150 : Lady
+151 : Rich Boy
+152 : Pokémon Breeder
+153 : Pokémon Breeder
+154 : Beauty
+155 : The Winstrates’
+156 : Hiker
+157 : Camper
+158 : Picnicker
+159 : Kindler
+160 : Poké Maniac
+161 : Expert
+162 : [~ 162]
+163 : Bird Keeper
+164 : Bug Maniac
+165 : Pokémon Ranger
+166 : Pokémon Ranger
+167 : Ninja Boy
+168 : Dragon Tamer
+169 : Psychic
+170 : Psychic
+171 : Triathlete
+172 : [~ 172]
+173 : Interviewers
+174 : Aqua Leader
+175 : Aqua Admin
+176 : Tuber
+177 : Hex Maniac
+178 : Magma Leader
+179 : Team Magma
+180 : Magma Admin
+181 : Team Aqua
+182 : Magma Admin
+183 : Team Magma
+184 : Parasol Lady
+185 : Gentleman
+186 : Aqua Admin
+187 : Magma Admin
+188 : Young Couple
+189 : Expert
+190 : Triathlete
+191 : [~ 191]
+192 : Pokémon Trainer
+193 : Sis & Bro
+194 : Elite Four
+195 : Elite Four
+196 : Elite Four
+197 : Elite Four
+198 : Champion
+199 : Poké Fan
+200 : Leader
+201 : Leader
+202 : Leader
+203 : Leader
+204 : Leader
+205 : Leader
+206 : Leaders
+207 : Leader
+208 : Ruin Maniac
+209 : The Winstrates’
+210 : Teammates
+211 : Old Couple
+212 : The Winstrates’
+213 : The Winstrates’
+214 : Poké Fan
+215 : Team Aqua
+216 : Team Magma
+217 : Proprietor
+218 : Rotation Girl
+219 : Pokémon Trainer
+220 : Fairy Tale Girl
+221 : Lorekeeper
+222 : Backpacker
+223 : Brains & Brawn
+224 : Scuba Diver
+225 : Free Diver
+226 : Mysterious Sisters
+227 : Street Thug
+228 : Delinquent
+229 : Ace Trainer
+230 : Ace Trainer
+231 : Ace Duo
+232 : Pokémon Trainer
+233 : Pokémon Trainer
+234 : Pokémon Trainer
+235 : Fare Prince
+236 : Secret Base Expert
+237 : Secret Base Trainer
+238 : Secret Base Trainer
+239 : Secret Base Trainer
+240 : Secret Base Trainer
+241 : Secret Base Trainer
+242 : Secret Base Trainer
+243 : Secret Base Trainer
+244 : Secret Base Trainer
+245 : Secret Base Trainer
+246 : Secret Base Trainer
+247 : Secret Base Trainer
+248 : Secret Base Trainer
+249 : Secret Base Trainer
+250 : Secret Base Trainer
+251 : Secret Base Trainer
+252 : Secret Base Trainer
+253 : Secret Base Trainer
+254 : Secret Base Trainer
+255 : Secret Base Trainer
+256 : Secret Base Trainer
+257 : Secret Base Trainer
+258 : Secret Base Trainer
+259 : Secret Base Trainer
+260 : Secret Base Trainer
+261 : Secret Base Trainer
+262 : Secret Base Trainer
+263 : Secret Base Trainer
+264 : Secret Base Trainer
+265 : Secret Base Trainer
+266 : Secret Base Trainer
+267 : Pokémon Trainer
+268 : Sootopolitan
+269 : Secret Base Trainer
+270 : Pokémon Trainer
+271 : Pokémon Trainer
+272 : Pokémon Trainer
+273 : Elite Four
+274 : Elite Four
+275 : Elite Four
+276 : Elite Four
+277 : Champion
+278 : Pokémon Trainer
+279 : Pokémon Trainer

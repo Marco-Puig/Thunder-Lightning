@@ -1,0 +1,355 @@
+0 : ——————
+1 : 
+2 : Mystery Zone
+3 : 
+4 : Faraway Place
+5 : 
+6 : Vaniville Town
+7 : 
+8 : Route 1
+9 : Vaniville Pathway
+10 : Aquacorde Town
+11 : 
+12 : Route 2
+13 : Avance Trail
+14 : Santalune Forest
+15 : 
+16 : Route 3
+17 : Ouvert Way
+18 : Santalune City
+19 : 
+20 : Route 4
+21 : Parterre Way
+22 : Lumiose City
+23 : 
+24 : Prism Tower
+25 : 
+26 : Lysandre Labs
+27 : 
+28 : Route 5
+29 : Versant Road
+30 : Camphrier Town
+31 : 
+32 : Shabboneau Castle
+33 : 
+34 : Route 6
+35 : Palais Lane
+36 : Parfum Palace
+37 : 
+38 : Route 7
+39 : Rivière Walk
+40 : Cyllage City
+41 : 
+42 : Route 8
+43 : Muraille Coast
+44 : Ambrette Town
+45 : 
+46 : Route 9
+47 : Spikes Passage
+48 : Battle Chateau
+49 : 
+50 : Route 10
+51 : Menhir Trail
+52 : Geosenge Town
+53 : 
+54 : Route 11
+55 : Miroir Way
+56 : Reflection Cave
+57 : 
+58 : Shalour City
+59 : 
+60 : Tower of Mastery
+61 : 
+62 : Route 12
+63 : Fourrage Road
+64 : Coumarine City
+65 : 
+66 : Route 13
+67 : Lumiose Badlands
+68 : Route 14
+69 : Laverre Nature Trail
+70 : Laverre City
+71 : 
+72 : Poké Ball Factory
+73 : 
+74 : Route 15
+75 : Brun Way
+76 : Dendemille Town
+77 : 
+78 : Route 16
+79 : Mélancolie Path
+80 : [~ 80]
+81 : [~ 81]
+82 : Frost Cavern
+83 : 
+84 : Route 17
+85 : Mamoswine Road
+86 : Anistar City
+87 : 
+88 : Route 18
+89 : Vallée Étroite Way
+90 : Couriway Town
+91 : 
+92 : Route 19
+93 : Grande Vallée Way
+94 : Snowbelle City
+95 : 
+96 : Route 20
+97 : Winding Woods
+98 : Pokémon Village
+99 : 
+100 : Route 21
+101 : Dernière Way
+102 : Route 22
+103 : Détourner Way
+104 : Victory Road
+105 : 
+106 : Pokémon League
+107 : 
+108 : Kiloude City
+109 : 
+110 : Battle Maison
+111 : 
+112 : Azure Bay
+113 : 
+114 : Dendemille Gate
+115 : 
+116 : Couriway Gate
+117 : 
+118 : Ambrette Gate
+119 : 
+120 : Lumiose Gate
+121 : 
+122 : Shalour Gate
+123 : 
+124 : Coumarine Gate
+125 : 
+126 : Laverre Gate
+127 : 
+128 : Anistar Gate
+129 : 
+130 : Snowbelle Gate
+131 : 
+132 : Glittering Cave
+133 : 
+134 : Connecting Cave
+135 : Zubat Roost
+136 : Kalos Power Plant
+137 : 
+138 : Team Flare Secret HQ
+139 : 
+140 : Terminus Cave
+141 : 
+142 : Lost Hotel
+143 : 
+144 : Chamber of Emptiness
+145 : 
+146 : Sea Spirit’s Den
+147 : 
+148 : Friend Safari
+149 : 
+150 : Blazing Chamber
+151 : 
+152 : Flood Chamber
+153 : 
+154 : Ironworks Chamber
+155 : 
+156 : Dragonmark Chamber
+157 : 
+158 : Radiant Chamber
+159 : 
+160 : Pokémon League Gate
+161 : 
+162 : Lumiose Station
+163 : 
+164 : Kiloude Station
+165 : 
+166 : Ambrette Aquarium
+167 : 
+168 : Unknown Dungeon
+169 : 
+170 : Littleroot Town
+171 : 
+172 : Oldale Town
+173 : 
+174 : Dewford Town
+175 : 
+176 : Lavaridge Town
+177 : 
+178 : Fallarbor Town
+179 : 
+180 : Verdanturf Town
+181 : 
+182 : Pacifidlog Town
+183 : 
+184 : Petalburg City
+185 : 
+186 : Slateport City
+187 : 
+188 : Mauville City
+189 : 
+190 : Rustboro City
+191 : 
+192 : Fortree City
+193 : 
+194 : Lilycove City
+195 : 
+196 : Mossdeep City
+197 : 
+198 : Sootopolis City
+199 : 
+200 : Ever Grande City
+201 : 
+202 : Pokémon League
+203 : 
+204 : Route 101
+205 : 
+206 : Route 102
+207 : 
+208 : Route 103
+209 : 
+210 : Route 104
+211 : 
+212 : Route 105
+213 : 
+214 : Route 106
+215 : 
+216 : Route 107
+217 : 
+218 : Route 108
+219 : 
+220 : Route 109
+221 : 
+222 : Route 110
+223 : 
+224 : Route 111
+225 : 
+226 : Route 112
+227 : 
+228 : Route 113
+229 : 
+230 : Route 114
+231 : 
+232 : Route 115
+233 : 
+234 : Route 116
+235 : 
+236 : Route 117
+237 : 
+238 : Route 118
+239 : 
+240 : Route 119
+241 : 
+242 : Route 120
+243 : 
+244 : Route 121
+245 : 
+246 : Route 122
+247 : 
+248 : Route 123
+249 : 
+250 : Route 124
+251 : 
+252 : Route 125
+253 : 
+254 : Route 126
+255 : 
+256 : Route 127
+257 : 
+258 : Route 128
+259 : 
+260 : Route 129
+261 : 
+262 : Route 130
+263 : 
+264 : Route 131
+265 : 
+266 : Route 132
+267 : 
+268 : Route 133
+269 : 
+270 : Route 134
+271 : 
+272 : Meteor Falls
+273 : 
+274 : Rusturf Tunnel
+275 : 
+276 : ???
+277 : 
+278 : Desert Ruins
+279 : 
+280 : Granite Cave
+281 : 
+282 : Petalburg Woods
+283 : 
+284 : Mt. Chimney
+285 : 
+286 : Jagged Pass
+287 : 
+288 : Fiery Path
+289 : 
+290 : Mt. Pyre
+291 : 
+292 : Team Aqua Hideout
+293 : 
+294 : Seafloor Cavern
+295 : 
+296 : Cave of Origin
+297 : 
+298 : Victory Road
+299 : 
+300 : Shoal Cave
+301 : 
+302 : New Mauville
+303 : 
+304 : Sea Mauville
+305 : 
+306 : Island Cave
+307 : 
+308 : Ancient Tomb
+309 : 
+310 : Sealed Chamber
+311 : 
+312 : Scorched Slab
+313 : 
+314 : Team Magma Hideout
+315 : 
+316 : Sky Pillar
+317 : 
+318 : Battle Resort
+319 : 
+320 : Southern Island
+321 : 
+322 : S.S. Tidal
+323 : 
+324 : Safari Zone
+325 : 
+326 : Mirage Forest
+327 : 
+328 : Mirage Cave
+329 : 
+330 : Mirage Island
+331 : 
+332 : Mirage Mountain
+333 : 
+334 : Trackless Forest
+335 : 
+336 : Pathless Plain
+337 : 
+338 : Nameless Cavern
+339 : 
+340 : Fabled Cave
+341 : 
+342 : Gnarled Den
+343 : 
+344 : Crescent Isle
+345 : 
+346 : Secret Islet
+347 : 
+348 : Soaring in the sky
+349 : 
+350 : Secret Shore
+351 : 
+352 : Secret Meadow
+353 : 
+354 : Secret Base
