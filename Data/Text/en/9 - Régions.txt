@@ -1,0 +1,11 @@
+0 : a Link Trade
+1 : a Link Trade
+2 : the Kanto region
+3 : the Johto region
+4 : the Hoenn region
+5 : the Sinnoh region
+6 : a distant land
+7 : ——————
+8 : the Unova region
+9 : the Kalos region
+10 : Pokémon Link

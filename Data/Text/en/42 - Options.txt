@@ -1,0 +1,54 @@
+0 : OPTIONS
+1 : CONFIRM
+2 : QUIT
+3 : TEXT SPEED
+4 : SLOW
+5 : NORMAL
+6 : FAST
+7 : You can choose from three different text-scrolling speeds to control how quickly messages appear.
+8 : BATTLE EFFECTS
+9 : ON
+10 : OFF
+11 : You can choose whether you wish to see move animations during battles or not.
+12 : BATTLE STYLE
+13 : SWITCH
+14 : SET
+15 : You can choose whether to be asked about switching Pokémon when an opposing Pokémon faints.
+16 : [~ 16]
+17 : [~ 17]
+18 : [~ 18]
+19 : [~ 19]
+20 : [~ 20]
+21 : CHARACTERS
+22 : Hiragana
+23 : Kanji
+24 : Switch JP characters.
+25 : BATTLE BG
+26 : DEFAULT
+27 : [~ 27]
+28 : [~ 28]
+29 : [~ 29]
+30 : [~ 30]
+31 : [~ 31]
+32 : [~ 32]
+33 : [~ 33]
+34 : [~ 34]
+35 : [~ 35]
+36 : [~ 36]
+37 : [~ 37]
+38 : [~ 38]
+39 : [~ 39]
+40 : [~ 40]
+41 : You can select a different wallpaper to be used on the lower screen during battles.
+42 : BUTTON MODE
+43 : DEFAULT
+44 : L=A
+45 : NO L/R BUTTON
+46 : You can disable the L and R Buttons, or set the L Button to function as the A Button. This also disables the R Button.
+47 : FORCED SAVE
+48 : SAVE
+49 : DON’T SAVE
+50 : You can choose whether or not you must save before PSS battles and other communication features.
+51 : Would you like to make these changes?
+52 : Yes
+53 : No

@@ -1,0 +1,46 @@
+0 : Name:
+1 : [VAR TRNAME(0000)]
+2 : ID No.:
+3 : [VAR NUM5(0000,0000)]
+4 : Hoenn Pokédex:
+5 : [VAR NUM3(0000)]
+6 : 
+7 : Money:
+8 : $[VAR NUM7(0000,002C)]
+9 : [~ 9]
+10 : Play time:
+11 : [VAR NUM3(0000)]
+12 : :
+13 : [VAR NUM2(0001)]
+14 : Adventure started on:
+15 : [VAR NUM2(0001)]/[VAR NUM2(0002)]/[VAR NUM4(0000,0000)]
+16 : Trainer Information
+17 : [~ 17]
+18 : [~ 18]
+19 : [~ 19]
+20 : [~ 20]
+21 : [~ 21]
+22 : [~ 22]
+23 : First entered Hall of Fame on:
+24 : Poké Miles:
+25 : [VAR NUM7(0000,002C)]
+26 : Battle Points:
+27 : [VAR NUM7(0000,002C)]
+28 : View Badges
+29 : Stone Badge Leader: Roxanne
+30 : Knuckle Badge Leader: Brawly
+31 : Dynamo Badge Leader: Wattson
+32 : Heat Badge Leader: Flannery
+33 : Balance Badge Leader: Norman
+34 : Feather Badge Leader: Winona
+35 : Mind Badge Leaders: Liza and Tate
+36 : Rain Badge Leader: Wallace
+37 : Gym Leader: Roxanne
+38 : Gym Leader: Brawly
+39 : Gym Leader: Wattson
+40 : Gym Leader: Flannery
+41 : Gym Leader: Norman
+42 : Gym Leader: Winona
+43 : Gym Leaders: Liza and Tate
+44 : Gym Leader: Wallace
+45 : National Pokédex:
