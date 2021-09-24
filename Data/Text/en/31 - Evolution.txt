@@ -1,7 +1,0 @@
-0 : What? [VAR PKNICK(0000)] is evolving!
-1 : Huh? [VAR PKNICK(0000)] stopped evolving!
-2 : Congratulations! Your [VAR PKNICK(0000)] evolved into [VAR PKNAME(0001)]!
-3 : FORGET
-4 : KEEP OLD MOVES!
-5 : Give up on [VAR MOVE(0000)]!
-6 : Don’t give up on [VAR MOVE(0000)]!
