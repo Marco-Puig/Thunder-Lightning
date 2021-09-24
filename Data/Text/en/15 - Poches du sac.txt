@@ -1,5 +1,0 @@
-0 : ITEMS
-1 : MEDICINE
-2 : TMs & HMs
-3 : BERRIES
-4 : KEY ITEMS
