@@ -1,0 +1,3 @@
+pokeball 1-4
+normal pokeball 04
+potion 17
