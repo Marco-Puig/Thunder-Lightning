@@ -1,0 +1,8 @@
+Need to install node.js v16+.
+Install discord.js.
+Use command line by click on the project's file directory and typing in cmd.
+Replace TOKEN with an actual token on main.js.
+
+Have fun, because I sure did!
+
+- Marco Puig
