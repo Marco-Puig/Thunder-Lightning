@@ -64,14 +64,16 @@ class Interpreter
   # Learn a skill to a Pokemon
   # @param pokemon [PFM::Pokemon] the Pokemon that will learn the skill (use $actors[index] for a Pokemon in the party).
   # @param id_skill [Integer, Symbol] the id of the skill in the database
+  # @return [Boolean] if the move was learnt or not
   # @author Nuri Yuri
   def skill_learn(pokemon, id_skill)
-    id_skill = GameData::Skill.get_id(id_skill) if id_skill.is_a?(Symbol)
     raise "Database Error : Skill ##{id_skill} doesn't exists." unless GameData::Skill.id_valid?(id_skill)
-    # Show the skill learn interface
-    GamePlay::Skill_Learn.new(pokemon, id_skill).main
-    Graphics.transition
+
     @wait_count = 2
+    # Show the skill learn interface
+    $scene.call_scene(MoveTeaching, pokemon, GameData::Skill[id_skill].id) do |scene|
+      return scene.learnt
+    end
   end
   alias enseigner_capacite skill_learn
 
@@ -124,7 +126,7 @@ class Interpreter
     id = GameData::Pokemon.get_id(id) if id.is_a?(Symbol)
     return nil if id == 0
     pokemon_id = id.is_a?(Hash) ? id[:id].to_i : id
-    raise "Database Error : The Pokémon ##{pokemon_id} doesn't exists." if pokemon_id < 1 || pokemon_id >= GameData::Pokemon.all.size
+    raise "Database Error : The Pokémon ##{pokemon_id} doesn't exists." unless GameData::Pokemon.id_valid?(pokemon_id)
     pokemon = id.class == Hash ? PFM::Pokemon.generate_from_hash(id) : PFM::Pokemon.new(id, 1)
     pokemon.egg_init
     return add_pokemon(pokemon)
@@ -227,19 +229,11 @@ class Interpreter
     @wait_count = 2
   end
 
-  # Open a Pokemon Shop
-  # @param pokemon_ids [Array<Integer>] id of the Pokemon to sell
-  # @param pokemon_prices [Array<Integer>] price of the Pokemon
-  # @param pokemon_levels [Array<Integer>] level of the pokemon when sold
-  # @note pokemon_levels can be Hash instead of integer in order to call PFM::Pokemon.generate_from_hash
-  def pokemon_shop_open(pokemon_ids, pokemon_prices, pokemon_levels)
-    GamePlay::Pokemon_Shop.new(pokemon_ids, pokemon_prices, pokemon_levels).main
-    Graphics.transition
-    @wait_count = 2
-  end
-
   # Show the Pokemon dex info
-  # @param pokemon_id [Integer, Symbol] ID of the Pokemon in the dex
+  # @overload show_pokemon(pokemon)
+  #   @param pokemon [PFM::Pokemon] the Pokemon to show in the dex
+  # @overload show_pokemon(pokemon_id)
+  #   @param pokemon_id [Integer, Symbol] ID of the Pokemon in the dex
   def show_pokemon(pokemon_id)
     pokemon_id = GameData::Pokemon.get_id(pokemon_id) if pokemon_id.is_a?(Symbol)
     GamePlay::Dex.new(pokemon_id).main

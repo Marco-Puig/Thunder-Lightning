@@ -1,0 +1,321 @@
+0 : Buy
+1 : Sell
+2 : No thanks!
+3 : Welcome to the Poké Mart! May I help you?
+4 : Please come again!
+5 : Is there anything else I may do for you?
+6 : Money
+7 : Poké Miles
+8 : Battle Points
+9 : $[VAR NUM7(0000,002C)]
+10 : $[VAR NUM5(0000,002C)]
+11 : [~ 11]
+12 : ——
+13 : [VAR NUM7(0000,002C)]
+14 : [VAR NUM5(0000,002C)] BP
+15 : Quit
+16 : [VAR ITEM2(0000)]
+17 : In Bag:
+18 : [VAR NUM3(0000)]
+19 : 
+20 : 
+21 : ×
+22 : [VAR NUM2(0000)]
+23 : [VAR ITEMPLUR1][VAR ITEM2(0000)]? Certainly. How many would you like?
+24 : You don’t have enough money.
+25 : You want [VAR NUM2(0001)] [VAR ITEMPLUR0][VAR ITEM2(0000)]. That will be $[VAR NUM7(0002,002C)]. Is that OK?
+26 : You want [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]. That will be $[VAR NUM7(0002,002C)]. Is that OK?
+27 : Yes
+28 : No
+29 : Here you go. Thank you.
+30 : You put away the [VAR ITEM2(0000)] in the [VAR 0112(0001)] Pocket.
+31 : You can’t take any more of this item.
+32 : You also get a Premier Ball as an added bonus.
+33 : Welcome to the Technical Machine department! May I help you?
+34 : You already have it!
+35 : No. [VAR NUM3(0000)], [VAR MOVE(0001)]? That will be $[VAR NUM7(0002,002C)]. OK?
+36 : You put away [VAR MOVE(0000)] in the [VAR 0112(0001)] Pocket.
+37 : [~ 37]
+38 : [~ 38]
+39 : [~ 39]
+40 : [~ 40]
+41 : [~ 41]
+42 : [~ 42]
+43 : [~ 43]
+44 : [~ 44]
+45 : [~ 45]
+46 : [~ 46]
+47 : [~ 47]
+48 : [~ 48]
+49 : [~ 49]
+50 : [~ 50]
+51 : [~ 51]
+52 : [~ 52]
+53 : [~ 53]
+54 : [~ 54]
+55 : [~ 55]
+56 : [~ 56]
+57 : [~ 57]
+58 : [~ 58]
+59 : [~ 59]
+60 : [~ 60]
+61 : [~ 61]
+62 : [~ 62]
+63 : [~ 63]
+64 : [~ 64]
+65 : [~ 65]
+66 : You don’t have enough Poké Miles.
+67 : You don’t have enough Battle Points.
+68 : How many [VAR ITEMPLUR1][VAR ITEM2(0000)] would you like to trade for your Poké Miles?
+69 : How many [VAR ITEMPLUR1][VAR ITEM2(0000)] would you like to trade for Battle Points?
+70 : You want [VAR NUM2(0001)] [VAR ITEMPLUR0][VAR ITEM2(0000)]. That will be [VAR NUM7(0002,002C)] Poké Mile[VAR NUMBRNCH(0002,0100)]s. OK?
+71 : You want [VAR NUM2(0001)] [VAR ITEMPLUR0][VAR ITEM2(0000)]. That will be [VAR NUM7(0002,002C)] BP. Is that OK?
+72 : You want [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]. That will be [VAR NUM7(0002,002C)] Poké Mile[VAR NUMBRNCH(0002,0100)]s. OK?
+73 : You want [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]. That will be [VAR NUM7(0002,002C)] BP. Is that OK?
+74 : Here you go. Thank you.
+75 : Here you go. Thank you.
+76 : You can’t take any more of this item.
+77 : You can’t take any more of this item.
+78 : No. [VAR NUM3(0000)], [VAR MOVE(0001)], will be [VAR NUM7(0002,002C)] Poké Mile[VAR NUMBRNCH(0002,0100)]s. OK?
+79 : No. [VAR NUM3(0000)], [VAR MOVE(0001)], will be [VAR NUM7(0002,0000)] BP. Is that OK?
+80 : Would you like to trade Poké Miles for prizes?
+81 : PokéMileage is the service that allows you to collect miles when you trade Pokémon. The number of miles you can earn depends on the distance between regions registered on the two Nintendo 3DS systems. You can also collect a small number of miles by walking around the Hoenn region. To view your current miles, please check Poké Miles on your Trainer Card.
+82 : Collect Poké Miles and come again.
+83 : Hello! Welcome to the Exchange Service Corner. Would you like to trade in your BP for some fabulous prizes?
+84 : Collect Battle Points and come again!
+85 : Yes
+86 : No
+87 : Info
+88 : [~ 88]
+89 : [~ 89]
+90 : Wouldn’t you like some fragrant incense?
+91 : Please come again.
+92 : Is there anything else I can help you with?
+93 : [VAR ITEMPLUR1][VAR ITEM2(0000)], then. And how many would you like?
+94 : So [VAR NUM2(0001)] [VAR ITEM2(0000)]... Your total comes to $[VAR NUM7(0002,002C)], OK?
+95 : So that’s [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]... Your total comes to $[VAR NUM7(0002,002C)], OK?
+96 : And here you are. Thank you for shopping with us!
+97 : It looks as though you’re out of space. You can’t carry any more incense.
+98 : Oops, you don’t have that much, do you?
+99 : I’m the Energy Guru! I’ll put all my energy into selling you what you need!
+100 : Thank you kindly!
+101 : Need anything else?
+102 : [VAR ITEMPLUR1][VAR ITEM2(0000)]! How many should I ready for you?
+103 : You want [VAR NUM2(0001)] [VAR ITEM2(0000)]? That’ll be $[VAR NUM7(0002,002C)]. You good with that?
+104 : You want [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]? That’ll be $[VAR NUM7(0002,002C)]. You good with that?
+105 : All right! Then here you are! Put your energy into using them well!
+106 : I like your energy, but looks like you can’t carry any more than what you have.
+107 : I like your energy, but it looks like you don’t have the money.
+108 : Welcome to the traveling TM shop!
+109 : Thank you for your patronage!
+110 : Do you need anything more?
+111 : How many [VAR ITEMPLUR1][VAR ITEM2(0000)] would you like to purchase?
+112 : So, you would like [VAR NUM2(0001)] [VAR ITEM2(0000)]. That will bring you to $[VAR NUM7(0002,002C)], OK?
+113 : So, you would like [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]. That will bring you to $[VAR NUM7(0002,002C)], OK?
+114 : Here you are! Thank you very much!
+115 : You can’t carry that much stuff in your Bag!
+116 : You don’t have enough money, though!
+117 : Welcome! Cheap and effective herbs are my wares!
+118 : Come again!
+119 : Anything else today?
+120 : How many [VAR ITEMPLUR1][VAR ITEM2(0000)] will you be needing?
+121 : OK, [VAR NUM2(0001)] [VAR ITEM2(0000)]! Your total is $[VAR NUM7(0002,002C)], sound all right?
+122 : OK, [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]! Your total is $[VAR NUM7(0002,002C)], sound all right?
+123 : And here you go. They’re very effective, you know!
+124 : Urk. You can’t carry any more items.
+125 : Ohhh, sorry, friend. You don’t seem to have enough cash.
+126 : Welcome to Lilycove Department Store! Are you looking for anything in particular?
+127 : We look forward to seeing you again!
+128 : Is there any other way that we at Lilycove Department Store can be of service?
+129 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] can we assist you with today?
+130 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+131 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+132 : Thank you for shopping at Lilycove Department Store! We hope to see you again!
+133 : It seems you can’t carry any more right now.
+134 : Your funds won’t cover that amount, I’m afraid.
+135 : Hello! This is the Pretty Petal flower shop. Spreading flowers throughout the world!
+136 : Visit us again anytime!
+137 : Is there anything else I can help with?
+138 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] would you like to buy?
+139 : So that’s one [VAR ITEM2(0000)] for a total of $[VAR NUM7(0002,002C)]. Is that what you’d like?
+140 : So that’s [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)] for a total of $[VAR NUM7(0002,002C)]. Is that what you’d like?
+141 : Lovely. And here you are. Happy decorating!
+142 : Oh no. It seems you don’t have space in the PC to store any new purchases.
+143 : Oh no. It looks as though you’re running too low on funds.
+144 : I’ve got a great array of Decorations for your Secret Base! Step right up and have a look!
+145 : Hope to see you again, pal!
+146 : Anything else?
+147 : And how many do you need?
+148 : Got it! That’ll be [VAR NUM2(0001)] [VAR ITEM2(0000)] for a grand total of $[VAR NUM7(0002,002C)]. Right?
+149 : Got it! That’ll be [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)] for a grand total of $[VAR NUM7(0002,002C)]. Right?
+150 : Thanks as always!
+151 : You can’t put that much in the PC, can you?
+152 : I’m afraid that’s not enough cash, pal.
+153 : Welcome, welcome. How about a lovely doll or two?
+154 : Fine, fine. Do come again though!
+155 : Anything else you might need?
+156 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] might you need?
+157 : Right, right, [VAR NUM2(0001)] [VAR ITEM2(0000)] for $[VAR NUM7(0002,002C)]. Might that be all right?
+158 : Right, right, [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)] for $[VAR NUM7(0002,002C)]. Might that be all right?
+159 : Here, here, take your stuff. Thanks for shopping with us!
+160 : No, no, you simply can’t put any more dolls into the PC.
+161 : No, no, I’m sorry to say that you just don’t have the money right now.
+162 : [~ 162]
+163 : [~ 163]
+164 : [~ 164]
+165 : [~ 165]
+166 : [~ 166]
+167 : [~ 167]
+168 : [~ 168]
+169 : [~ 169]
+170 : [~ 170]
+171 : [~ 171]
+172 : [~ 172]
+173 : [~ 173]
+174 : [~ 174]
+175 : [~ 175]
+176 : [~ 176]
+177 : [~ 177]
+178 : [~ 178]
+179 : [~ 179]
+180 : [~ 180]
+181 : [~ 181]
+182 : [~ 182]
+183 : [~ 183]
+184 : [~ 184]
+185 : [~ 185]
+186 : [~ 186]
+187 : [~ 187]
+188 : [~ 188]
+189 : Welcome, welcome! Want me to teach your Pokémon a move in return for some BP?
+190 : Save up those Battle Points and come see me again!
+191 : Which Pokémon do you want me to tutor?
+192 : [VAR PKNICK(0000)] wants to learn the move [VAR MOVE(0001)]. However, [VAR PKNICK(0000)] already knows four moves. Should a move be deleted and replaced with [VAR MOVE(0001)]?
+193 : Must-have items for your Secret Base! We’ve got your desks and chairs right here!
+194 : Come again!
+195 : Anything else I can get you?
+196 : [VAR ITEMPLUR1][VAR ITEM2(0000)], OK! And how many [VAR ITEMPLUR1][VAR ITEM2(0000)]?
+197 : OK, I’ve got [VAR NUM2(0001)] [VAR ITEM2(0000)] for $[VAR NUM7(0002,002C)]. Does that sound right?
+198 : OK, I’ve got [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)] for $[VAR NUM7(0002,002C)]. Does that sound right?
+199 : And here you go! Thank you for shopping with us!
+200 : You can’t put all that much in the PC!
+201 : Hmm, looks like your wallet’s a little too thin for that kind of purchase!
+202 : [~ 202]
+203 : [~ 203]
+204 : [~ 204]
+205 : [~ 205]
+206 : [~ 206]
+207 : [~ 207]
+208 : [~ 208]
+209 : [~ 209]
+210 : [~ 210]
+211 : [~ 211]
+212 : [~ 212]
+213 : [~ 213]
+214 : [~ 214]
+215 : [~ 215]
+216 : [~ 216]
+217 : [~ 217]
+218 : [~ 218]
+219 : [~ 219]
+220 : [~ 220]
+221 : [~ 221]
+222 : [~ 222]
+223 : [~ 223]
+224 : [~ 224]
+225 : [~ 225]
+226 : [~ 226]
+227 : [~ 227]
+228 : [~ 228]
+229 : We’ve got plenty of goods to help you enjoy your life in your Secret Base!
+230 : Enjoy your Secret Base life!
+231 : Anything more?
+232 : [VAR ITEMPLUR1][VAR ITEM2(0000)]! How many will you take?
+233 : So it’ll be [VAR NUM2(0001)] [VAR ITEM2(0000)]! That’s $[VAR NUM7(0002,002C)]. Sound OK?
+234 : So it’ll be [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)]! That’s $[VAR NUM7(0002,002C)]. Sound OK?
+235 : Thank you, thank you!
+236 : Even if you buy that many, you can’t fit them all in the PC, you know!
+237 : You’re too short on cash!
+238 : [~ 238]
+239 : [~ 239]
+240 : [~ 240]
+241 : [~ 241]
+242 : [~ 242]
+243 : [~ 243]
+244 : [~ 244]
+245 : [~ 245]
+246 : [~ 246]
+247 : [~ 247]
+248 : [~ 248]
+249 : [~ 249]
+250 : [~ 250]
+251 : [~ 251]
+252 : [~ 252]
+253 : [~ 253]
+254 : [~ 254]
+255 : [~ 255]
+256 : [~ 256]
+257 : [~ 257]
+258 : [~ 258]
+259 : [~ 259]
+260 : [~ 260]
+261 : [~ 261]
+262 : [~ 262]
+263 : [~ 263]
+264 : [~ 264]
+265 : Welcome to Lilycove Department Store! Are you looking for anything in particular?
+266 : We look forward to seeing you again!
+267 : Is there any other way that we at Lilycove Department Store can be of service?
+268 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] can we assist you with today?
+269 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+270 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+271 : Thank you for shopping at Lilycove Department Store! We hope to see you again!
+272 : You won’t be able to fit that much in the PC!
+273 : Your funds won’t cover that amount, I’m afraid.
+274 : Welcome to Lilycove Department Store! Are you looking for anything in particular?
+275 : We look forward to seeing you again!
+276 : Is there any other way that we at Lilycove Department Store can be of service?
+277 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] can we assist you with today?
+278 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+279 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+280 : Thank you for shopping at Lilycove Department Store! We hope to see you again!
+281 : You won’t be able to fit that much in the PC!
+282 : Your funds won’t cover that amount, I’m afraid.
+283 : Welcome to Lilycove Department Store! Are you looking for anything in particular?
+284 : We look forward to seeing you again!
+285 : Is there any other way that we at Lilycove Department Store can be of service?
+286 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] can we assist you with today?
+287 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+288 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+289 : Thank you for shopping at Lilycove Department Store! We hope to see you again!
+290 : You won’t be able to fit that much in the PC!
+291 : Your funds won’t cover that amount, I’m afraid.
+292 : Welcome to Lilycove Department Store! Are you looking for anything in particular?
+293 : We look forward to seeing you again!
+294 : Is there any other way that we at Lilycove Department Store can be of service?
+295 : And how many [VAR ITEMPLUR1][VAR ITEM2(0000)] can we assist you with today?
+296 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+297 : Yes, [VAR GENDBR(00FF,0503)]sirma'am. For [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)], your total will be $[VAR NUM7(0002,002C)]. Is that all right?
+298 : Thank you for shopping at Lilycove Department Store! We hope to see you again!
+299 : You won’t be able to fit that much in the PC!
+300 : Your funds won’t cover that amount, I’m afraid.
+301 : Welcome, welcome! What timing! We’re now holding our regular Clearance Sale!
+302 : We look forward to seeing you again!
+303 : Is there anything else we can get for you?
+304 : How many [VAR ITEMPLUR1][VAR ITEM2(0000)] will you take off our hands?
+305 : You’ll take [VAR NUM2(0001)] [VAR ITEM2(0000)] for us? That’ll be $[VAR NUM7(0002,002C)]. Sounds good, right?
+306 : You’ll take [VAR NUM2(0001)] [VAR ITEMPLUR1][VAR ITEM2(0000)] for us? That’ll be $[VAR NUM7(0002,002C)]. Sounds good, right?
+307 : Thanks for shopping!
+308 : Looks like that won’t fit in the PC!
+309 : Sorry, friend! You don’t have enough cash!
+310 : Give up on learning the move [VAR MOVE(0001)]?
+311 : [VAR PKNICK(0000)] did not learn [VAR MOVE(0001)]!
+312 : Ah... Well, I can’t actually teach any moves to an Egg, see...
+313 : You’re good with having it forget [VAR MOVE(0000)]?
+314 : 1, [WAIT 20]2, and[WAIT 20]... [WAIT 20]... [WAIT 20]... Ta-da![VAR BE05(0003)][VAR BE05(0005)] [VAR PKNICK(0000)] forgot how to use [VAR MOVE(0002)]. And...
+315 : [VAR PKNICK(0000)] learned [VAR MOVE(0001)]!
+316 : Do you want me to teach any other moves?
+317 : [VAR TRNAME(0000)] sent the [VAR 01A6(0001)] to h[VAR GENDBR(0000,0202)]iser Secret PC!
+318 : Oho. Looks like your Pokémon already knows that move.
+319 : Ahhh... Looks like your Pokémon can’t actually learn that move.
+320 : Then I’ll take the BP. Thanks for the business!

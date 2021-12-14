@@ -364,8 +364,8 @@ class Pokemon_Effect
 
   #>Récupération des dommages infligés par les Picots
   def get_spikes_dammages(pokemon)
-    #si Pokémon vol
-    if pokemon.type_fly? #Vérifier les autres exceptions !!!!
+    # If Flying type / Levitate / Iron Ball / Gravity
+    if (pokemon.type_fly? || BattleEngine::Abilities.has_ability_usable(pokemon, 26)) && !BattleEngine::_has_item(pokemon, 278) && !BattleEngine.state[:gravity] > 0
       return 0
     end
     case @spikes
@@ -382,9 +382,9 @@ class Pokemon_Effect
 
   #>Récupération des HP perdus à cause de Piege de rock A conserver !!!!
   def get_stealth_rock_dammages(pokemon)
-    mod = GameData::Type.multiplier(13, pokemon.type1) *
-          GameData::Type.multiplier(13, pokemon.type2) *
-          GameData::Type.multiplier(13, pokemon.type3)
+    mod = GameData::Type[pokemon.type1].hit_by(13) *
+          GameData::Type[pokemon.type2].hit_by(13) *
+          GameData::Type[pokemon.type3].hit_by(13)
     return (pokemon.max_hp * mod / 8).floor
   end
   #> application de la toile gluante
@@ -602,6 +602,7 @@ class Pokemon_Effect
     @encore = skill
   end
 
+  # @return [PFM::Skill, nil]
   def encore_skill
     @encore
   end

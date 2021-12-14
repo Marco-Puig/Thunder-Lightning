@@ -3,12 +3,6 @@ module Yuki
   module Transitions
     # The number of frame the transition takes to display
     NB_Frame = 60
-    # The shader used by the circular transition
-    CircularShader = Shader.load_to_string('Yuki_Transition_Circular')
-    # The shader used by the directed transition
-    DirectedShader = Shader.load_to_string('Yuki_Transition_Directed')
-    # The shader used by a weird battle transition
-    WeirdShader = Shader.load_to_string('Yuki_Transition_Weird')
 
     module_function
 
@@ -18,7 +12,7 @@ module Yuki
     def circular(direction = -1)
       sp1 = ShaderedSprite.new
       sp1.bitmap = Bitmap.new(Graphics.width, Graphics.height)
-      sp1.shader = shader = Shader.new(CircularShader)
+      sp1.shader = shader = Shader.create(:yuki_circular)
       shader.set_float_uniform('xfactor', sp1.bitmap.width.to_f / (h = sp1.bitmap.height))
       0.upto(NB_Frame) do |i|
         yield(i, sp1) if block_given?
@@ -71,7 +65,7 @@ module Yuki
       d = gp.direction * direction
       sp1 = ShaderedSprite.new
       sp1.bitmap = Bitmap.new(w, w2.to_i)
-      sp1.shader = Shader.new(DirectedShader)
+      sp1.shader = Shader.create(:yuki_directed)
       sp1.shader.set_float_array_uniform('yval', Array.new(10) { |i| (w + 10 * i) / w2 })
       # Processing
       sp1.set_origin(w / 2, w)
@@ -94,9 +88,9 @@ module Yuki
     # @param delta_tau [Float] the derivative of tau between the begining and the end of the transition
     def weird_transition(nb_frame = 60, radius = 0.25, max_alpha = 0.5, min_tau = 0.07, delta_tau = 0.07, bitmap: nil)
       sp = ShaderedSprite.new
-      sp.bitmap = bitmap || ($scene.is_a?(Scene_Map) ? $scene.spriteset.map_viewport : $scene.viewport).snap_to_bitmap
+      sp.bitmap = bitmap || $scene.snap_to_bitmap
       sp.zoom = Graphics.width / sp.bitmap.width.to_f
-      sp.shader = shader = Shader.new(WeirdShader)
+      sp.shader = shader = Shader.create(:yuki_weird)
       sp.set_origin(sp.bitmap.width / 2, sp.bitmap.height / 2)
       sp.set_position(Graphics.width / 2, Graphics.height / 2)
       shader.set_float_uniform('radius', radius)

@@ -1,0 +1,84 @@
+0 : Cheri
+1 : Chesto
+2 : Pecha
+3 : Rawst
+4 : Aspear
+5 : Leppa
+6 : Oran
+7 : Persim
+8 : Lum
+9 : Sitrus
+10 : Figy
+11 : Wiki
+12 : Mago
+13 : Aguav
+14 : Iapapa
+15 : Razz
+16 : Bluk
+17 : Nanab
+18 : Wepear
+19 : Pinap
+20 : Pomeg
+21 : Kelpsy
+22 : Qualot
+23 : Hondew
+24 : Grepa
+25 : Tamato
+26 : Cornn
+27 : Magost
+28 : Rabuta
+29 : Nomel
+30 : Spelon
+31 : Pamtre
+32 : Watmel
+33 : Durin
+34 : Belue
+35 : Occa
+36 : Passho
+37 : Wacan
+38 : Rindo
+39 : Yache
+40 : Chople
+41 : Kebia
+42 : Shuca
+43 : Coba
+44 : Payapa
+45 : Tanga
+46 : Charti
+47 : Kasib
+48 : Haban
+49 : Colbur
+50 : Babiri
+51 : Chilan
+52 : Liechi
+53 : Ganlon
+54 : Salac
+55 : Petaya
+56 : Apicot
+57 : Lansat
+58 : Starf
+59 : Enigma
+60 : Micle
+61 : Custap
+62 : Jaboca
+63 : Rowap
+64 : Roseli
+65 : Kee
+66 : Maranga
+67 : [~ 67]
+68 : [~ 68]
+69 : [~ 69]
+70 : [~ 70]
+71 : [~ 71]
+72 : [~ 72]
+73 : [~ 73]
+74 : [~ 74]
+75 : [~ 75]
+76 : [~ 76]
+77 : [~ 77]
+78 : [~ 78]
+79 : [~ 79]
+80 : [~ 80]
+81 : [~ 81]
+82 : [~ 82]
+83 : [~ 83]

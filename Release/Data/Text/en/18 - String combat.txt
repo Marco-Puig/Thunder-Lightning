@@ -1,0 +1,288 @@
+0 : ●●
+1 : A wild [VAR PKNAME(0000)] appeared!
+2 : Whoa! A wild [VAR PKNAME(0000)] leaped out!
+3 : Oh! A wild [VAR PKNAME(0000)] appeared!
+4 : A wild [VAR PKNAME(0000)] appeared!
+5 : Whoa! The [VAR PKNAME(0000)] you stepped on attacked!
+6 : [VAR PKNAME(0000)] appeared!
+7 : Whoa! A horde of [VAR PKNAME(0000)] appeared!
+8 : You are challenged by [VAR 010E(0000)] [VAR TRNAME(0001)]!
+9 : [VAR TRNAME(0000)] is issuing a challenge!
+10 : You are challenged by [VAR 010E(0000)] [VAR TRNAME(0001)] and [VAR 010E(0002)] [VAR TRNAME(0003)]!
+11 : [VAR TRNAME(0000)] and [VAR TRNAME(0001)] issued a challenge!
+12 : Go! [VAR PKNICK(0000)]!
+13 : Go! [VAR PKNICK(0000)] and [VAR PKNICK(0001)]!
+14 : Go! [VAR PKNICK(0000)], [VAR PKNICK(0001)], and [VAR PKNICK(0002)]!
+15 : [VAR 010E(0000)] [VAR TRNAME(0001)] sent out [VAR PKNICK(0002)]!
+16 : [VAR 010E(0000)] [VAR TRNAME(0001)] sent out [VAR PKNICK(0002)] and [VAR PKNICK(0003)]!
+17 : [VAR 010E(0000)] [VAR TRNAME(0001)] sent out [VAR PKNICK(0002)], [VAR PKNICK(0003)], and [VAR PKNICK(0004)]!
+18 : [VAR TRNAME(0000)] sent out [VAR PKNICK(0001)]!
+19 : [VAR TRNAME(0000)] sent out [VAR PKNICK(0001)] and [VAR PKNICK(0002)]!
+20 : [VAR TRNAME(0000)] sent out [VAR PKNICK(0001)], [VAR PKNICK(0002)], and [VAR PKNICK(0003)]!
+21 : [VAR 010E(0000)] [VAR TRNAME(0001)] is about to send in [VAR PKNICK(0002)]. Will you switch your Pokémon?
+22 : You’re in charge, [VAR PKNICK(0000)]!
+23 : Go for it, [VAR PKNICK(0000)]!
+24 : Just a little more! Hang in there, [VAR PKNICK(0000)]!
+25 : Your opponent’s weak! Get ’em, [VAR PKNICK(0000)]!
+26 : [VAR PKNICK(0000)], switch out! Come back!
+27 : [VAR PKNICK(0000)], come back!
+28 : [VAR PKNICK(0000)], that’s enough! Come back!
+29 : OK, [VAR PKNICK(0000)]! Come back!
+30 : Good job, [VAR PKNICK(0000)]! Come back!
+31 : [VAR 010E(0000)] [VAR TRNAME(0001)] withdrew [VAR PKNICK(0002)]!
+32 : [VAR TRNAME(0000)] withdrew [VAR PKNICK(0001)]!
+33 : Hit [VAR NUM1(0000)] time[VAR NUMBRNCH(0000,0100)]s!
+34 : [VAR TRNAME(0000)] used [VAR iCOLOR2(0001)][VAR ITEM2(0001)].
+35 : [VAR TRNAME(0000)] used [VAR iCOLOR2(0001)][VAR ITEM2(0001)].
+36 : [VAR 010E(0000)][VAR TRNAME(0001)] used [VAR iCOLOR2(0002)][VAR ITEM2(0002)]!
+37 : [VAR TRNAME(0000)] launched [VAR iCOLOR2(0002)][VAR ITEM2(0002)] toward [VAR PKNICK(0001)]!
+38 : You cannot use your Wonder Launcher now!
+39 : [VAR TRNAME(0000)]’s Pokémon rotated to the left!
+40 : [VAR TRNAME(0000)]’s Pokémon rotated to the left!
+41 : [VAR TRNAME(0000)]’s Pokémon rotated to the right!
+42 : [VAR TRNAME(0000)]’s Pokémon rotated to the right!
+43 : [VAR 010C(0000)] gained [VAR NUM7(0001,002C)] Exp. Point[VAR NUMBRNCH(0001,0100)]s!
+44 : [VAR 010C(0000)] gained a boosted [VAR NUM7(0001,002C)] Exp. Points!
+45 : The rest of your team gained Exp. Points thanks to the Exp. Share!
+46 : You defeated [VAR 010E(0000)] [VAR TRNAME(0001)]!
+47 : You beat [VAR 010E(0000)] [VAR TRNAME(0001)] and [VAR 010E(0002)] [VAR TRNAME(0003)]!
+48 : You lost against [VAR 010E(0000)] [VAR TRNAME(0001)]!
+49 : Your battle ended in a draw against [VAR 010E(0000)] [VAR TRNAME(0001)]!
+50 : You defeated [VAR TRNAME(0000)]!
+51 : You defeated [VAR TRNAME(0000)] and [VAR TRNAME(0001)]!
+52 : You lost against [VAR TRNAME(0000)]!
+53 : You lost to [VAR TRNAME(0000)] and [VAR TRNAME(0001)]!
+54 : You battled to a draw against [VAR TRNAME(0000)]!
+55 : You battled to a draw against [VAR TRNAME(0000)] and [VAR TRNAME(0001)]!
+56 : [VAR TRNAME(0000)] has no more Pokémon that can fight!
+57 : [VAR TRNAME(0000)] panicked and dropped $[VAR NUM5(0001,002C)]...
+58 : [VAR TRNAME(0000)] gave $[VAR NUM5(0001,002C)] to the winner...
+59 : [VAR TRNAME(0000)] blacked out!
+60 : [VAR TRNAME(0000)] received $[VAR NUM6(0001,002C)] for winning!
+61 : [VAR TRNAME(0000)] picked up $[VAR NUM5(0001,002C)]!
+62 : [VAR 010C(0000)] grew to Lv. [VAR NUM3(0001)]!
+63 : Oh no! The Pokémon broke free!
+64 : Aww! It appeared to be caught!
+65 : Aargh! Almost had it!
+66 : Gah! It was so close, too!
+67 : Gotcha! [VAR PKNAME(0000)] was caught!
+68 : [VAR PKNAME(0000)]’s data was added to the Pokédex.
+69 : The Trainer blocked your Poké Ball! Don’t be a thief!
+70 : But it had no effect!
+71 : What will [VAR 010C(0000)] do?
+72 : What will [VAR TRNAME(0000)] do?
+73 : [VAR 010C(0000)] is awaiting [VAR TRNAME(0001)]’s directions...
+74 : But it failed!
+75 : You got away safely!
+76 : You couldn’t get away!
+77 : You can’t escape!
+78 : The wild [VAR PKNICK(0000)] fled!
+79 : No! There’s no running from a Trainer battle!
+80 : Would you like to forfeit the match and quit now?
+81 : It’s super effective!
+82 : It’s not very effective...
+83 : It hurt itself in its confusion!
+84 : [VAR BD00(0007,0000,0000)]A critical hit![VAR BD01]
+85 : But there was no PP left for the move!
+86 : [VAR TRNAME(0000)] came to the rescue and restored [VAR PKNICK(0001)]’s health!
+87 : The sunlight turned harsh!
+88 : It started to rain!
+89 : A sandstorm kicked up!
+90 : It started to hail!
+91 : Fog crept up as thick as soup!
+92 : The sunlight faded.
+93 : The rain stopped.
+94 : The sandstorm subsided.
+95 : The hail stopped.
+96 : The fog lifted.
+97 : The effects of the weather disappeared.
+98 : The sandstorm is raging.
+99 : The hail is crashing down.
+100 : It’s a one-hit KO!
+101 : The [VAR ITEM2(0000)] weakened [VAR MOVE(0001)]’s power!
+102 : The [VAR ITEM2(0000)] only allows the use of [VAR MOVE(0001)]!
+103 : The effects of the [VAR ITEM2(0000)] prevent status moves from being used!
+104 : [VAR 010C(0000)] can only use [VAR MOVE(0001)]!
+105 : All stat changes were eliminated!
+106 : But nothing happened!
+107 : [VAR PKNICK(0000)]’s [VAR ABILITY(0001)]!
+108 : Magnitude 4!
+109 : Magnitude 5!
+110 : Magnitude 6!
+111 : Magnitude 7!
+112 : Magnitude 8!
+113 : Magnitude 9!
+114 : Magnitude 10!
+115 : A bell chimed!
+116 : A soothing aroma wafted through the area!
+117 : The battlers shared their pain!
+118 : Fire’s power was weakened!
+119 : The effects of Water Sport have faded.
+120 : Electricity’s power was weakened!
+121 : The effects of Mud Sport have faded.
+122 : The twisted dimensions returned to normal!
+123 : Gravity intensified!
+124 : Gravity returned to normal!
+125 : All Pokémon that hear the song will faint in three turns!
+126 : Waggling a finger let it use [VAR MOVE(0000)]!
+127 : Nature Power turned into [VAR MOVE(0000)]!
+128 : Coins were scattered everywhere!
+129 : But it does not have enough HP left to make a substitute!
+130 : Reflect raised your team’s Defense!
+131 : Reflect raised the opposing team’s Defense!
+132 : Your team’s Reflect wore off!
+133 : The opposing team’s Reflect wore off!
+134 : Light Screen raised your team’s Special Defense!
+135 : Light Screen raised the opposing team’s Special Defense!
+136 : Your team’s Light Screen wore off!
+137 : The opposing team’s Light Screen wore off!
+138 : Your team cloaked itself in a mystical veil!
+139 : The opposing team cloaked itself in a mystical veil!
+140 : Your team is no longer protected by Safeguard!
+141 : The opposing team is no longer protected by Safeguard!
+142 : Your team became shrouded in mist!
+143 : The opposing team became shrouded in mist!
+144 : Your team is no longer protected by mist!
+145 : The opposing team is no longer protected by mist!
+146 : The Tailwind blew from behind your team!
+147 : The Tailwind blew from behind the opposing team!
+148 : Your team’s Tailwind petered out!
+149 : The opposing team’s Tailwind petered out!
+150 : Lucky Chant shielded your team from critical hits!
+151 : Lucky Chant shielded the opposing team from critical hits!
+152 : Your team’s Lucky Chant wore off!
+153 : The opposing team’s Lucky Chant wore off!
+154 : Spikes were scattered all around your team’s feet!
+155 : Spikes were scattered all around the opposing team’s feet!
+156 : The spikes disappeared from around your team’s feet!
+157 : The spikes disappeared from around the opposing team’s feet!
+158 : Poison spikes were scattered all around your team’s feet!
+159 : Poison spikes were scattered all around the opposing team’s feet!
+160 : The poison spikes disappeared from around your team’s feet!
+161 : The poison spikes disappeared from around the opposing team’s feet!
+162 : Pointed stones float in the air around your team!
+163 : Pointed stones float in the air around the opposing team!
+164 : The pointed stones disappeared from around your team!
+165 : The pointed stones disappeared from around the opposing team!
+166 : Wide Guard protected your team!
+167 : Wide Guard protected the opposing team!
+168 : Quick Guard protected your team!
+169 : Quick Guard protected the opposing team!
+170 : A rainbow appeared in the sky on your team’s side!
+171 : A rainbow appeared in the sky on the opposing team’s side!
+172 : The rainbow on your team’s side disappeared!
+173 : The rainbow on the opposing team’s side disappeared!
+174 : A sea of fire enveloped your team!
+175 : A sea of fire enveloped the opposing team!
+176 : The sea of fire around your team disappeared!
+177 : The sea of fire around the opposing team disappeared!
+178 : A swamp enveloped your team!
+179 : A swamp enveloped the opposing team!
+180 : The swamp around your team disappeared!
+181 : The swamp around the opposing team disappeared!
+182 : Your team is too nervous to eat Berries!
+183 : The opposing team is too nervous to eat Berries!
+184 : It created a bizarre area in which Defense and Sp. Def stats are swapped!
+185 : Wonder Room wore off, and Defense and Sp. Def stats returned to normal!
+186 : It created a bizarre area in which Pokémon’s held items lose their effects!
+187 : Magic Room wore off, and held items’ effects returned to normal!
+188 : The [VAR ITEM2(0000)] strengthened [VAR MOVE(0001)]’s power!
+189 : Time has run out! The battle is over!
+190 : The battle is too long. Playback canceled.
+191 : Zen Mode triggered!
+192 : Zen Mode ended!
+193 : The two moves have become one! It’s a combined move!
+194 : [VAR 010C(0000)] won’t obey!
+195 : [VAR 010C(0000)] is loafing around!
+196 : [VAR 010C(0000)] turned away!
+197 : [VAR 010C(0000)] pretended not to notice!
+198 : [VAR 010C(0000)] ignored orders!
+199 : [VAR 010C(0000)] began to nap!
+200 : [VAR 010C(0000)] ignored orders and kept sleeping!
+201 : Automatic center!
+202 : But the item doesn’t do anything there!
+203 : Sky Drop won’t let [VAR 010C(0000)] go!
+204 : The match was forfeited.
+205 : Grass grew to cover the battlefield!
+206 : The grass disappeared from the battlefield.
+207 : Mist swirls around the battlefield!
+208 : The mist disappeared from the battlefield.
+209 : An electric current runs across the battlefield!
+210 : The electricity disappeared from the battlefield.
+211 : Crafty Shield protected your team!
+212 : Crafty Shield protected the opposing team!
+213 : [VAR MOVE(0000)] was blocked by the kicked-up mat!
+214 : A sticky web spreads out beneath your team’s feet!
+215 : A sticky web has been laid out beneath the opposing team’s feet!
+216 : The sticky web has disappeared from beneath your feet!
+217 : The sticky web has disappeared from beneath the opposing team’s feet!
+218 : Your Pokémon can’t use this move because it hasn’t eaten any Berries!
+219 : [VAR TRNAME(0000)] found [VAR iCOLOR2(0001)][VAR ITEM2(0001)] in the aftermath!
+220 : [VAR 010C(0000)] toughed it out to show its best side to [VAR TRNAME(0001)]!
+221 : [VAR 010C(0000)] shook itself awake so that [VAR TRNAME(0001)] wouldn’t worry!
+222 : [VAR 010C(0000)] managed to expel the poison so that [VAR TRNAME(0001)] wouldn’t worry!
+223 : [VAR 010C(0000)] blew on its burn and made it better so that [VAR TRNAME(0001)] wouldn’t worry!
+224 : [VAR 010C(0000)] gathered all its energy to break through its paralysis so that [VAR TRNAME(0001)] wouldn’t worry!
+225 : [VAR 010C(0000)] melted the ice with its fiery determination so that [VAR TRNAME(0001)] wouldn’t worry!
+226 : [VAR 010C(0000)] read [VAR TRNAME(0001)]’s mind and avoided the move!
+227 : [VAR 010C(0000)] is so in sync with [VAR TRNAME(0001)]’s wishes that [VAR BD00(0007,0000,0000)]it landed a critical hit[VAR BD01]!
+228 : [VAR 010C(0000)] turned back toward [VAR TRNAME(0001)] and nodded in understanding!
+229 : [VAR 010C(0000)] is looking at [VAR TRNAME(0001)] with trusting eyes!
+230 : [VAR 010C(0000)] trusts [VAR TRNAME(0001)] to come up with the best strategy!
+231 : [VAR 010C(0000)] and [VAR TRNAME(0001)] are breathing in perfect sync with one another!
+232 : [VAR 010C(0000)] seems curious about [VAR TRNAME(0001)]’s Bag...
+233 : [VAR 010C(0000)] is bursting with enthusiasm for the battle!
+234 : [VAR 010C(0000)] really wants some time to play with [VAR TRNAME(0001)]...
+235 : [VAR 010C(0000)] seems to be interested in the other Pokémon’s scent...
+236 : [VAR 010C(0000)] is reassured by [VAR TRNAME(0001)]’s familiar scent...
+237 : [VAR 010C(0000)] seems curious about what is going on around it.
+238 : [VAR 010C(0000)] is remembering the first time it met [VAR TRNAME(0001)]...
+239 : [VAR 010C(0000)] seems a bit excited.
+240 : [VAR 010C(0000)] seems a little bit out of it...
+241 : [VAR 010C(0000)] seems a little uneasy...
+242 : [VAR 010C(0000)] looks a bit excited.
+243 : [VAR 010C(0000)] can’t wait to begin.
+244 : Go on, [VAR 010C(0000)]! I know you can do it!
+245 : Come on back, [VAR 010C(0000)]! You did great out there!
+246 : That’s it! I knew you could do it!
+247 : [VAR 010C(0000)] is in a bit of a pinch. It looks like it might cry...
+248 : [VAR 010C(0000)] is thrilled to bits!
+249 : Zzz... Zzz...
+250 : [VAR OPOWER(0001)] was offered by [VAR 018D(0000)]!
+251 : You defeated [VAR NUM1(0000)] Pokémon at the same time!
+252 : Changed to Blade Forme!
+253 : Changed to Shield Forme!
+254 : [VAR PKNICK(0000)] was frisked, revealing its [VAR ITEM2(0001)]!
+255 : Everyone is caught up in the happy atmosphere!
+256 : That move won’t work well during a Sky Battle!
+257 : A deluge of ions showers the battlefield!
+258 : No one will be able to run away during the next turn!
+259 : When the flame touched the powder on the Pokémon, it exploded!
+260 : [VAR NUM1(0000)]’s Metronome [VAR NUM3(0001)]: [VAR MOVE(0002)]
+261 : Whoa! A wild [VAR PKNAME(0000)] leaped out of the tall grass!
+262 : Whoa! A wild [VAR PKNAME(0000)] leaped out of the ground!
+263 : Whoa! A wild [VAR PKNAME(0000)] dived out of the sky!
+264 : Whoa! A wild [VAR PKNAME(0000)] swooped down from above!
+265 : Whoa! A wild [VAR PKNAME(0000)] leaped out of the trash can!
+266 : [VAR 018D(0000)]’s [VAR OPOWER(0001)] was activated!
+267 : Congratulations, [VAR TRNAME(0000)]!
+268 : Birch: Y-you’re not just going to leave me here, are you?!
+269 : A heavy rain began to fall!
+270 : The heavy rain has lifted!
+271 : The sunlight turned extremely harsh!
+272 : The harsh sunlight faded.
+273 : A mysterious air current is protecting Flying-type Pokémon!
+274 : The mysterious air current has dissipated!
+275 : The Fire-type attack fizzled out in the heavy rain!
+276 : The Water-type attack evaporated in the harsh sunlight!
+277 : There is no relief from this heavy rain!
+278 : The extremely harsh sunlight was not lessened at all!
+279 : The mysterious air current weakened the attack!
+280 : The mysterious air current blows on regardless!
+281 : But [VAR PKNICK(0000)] can’t use it the way it is now!
+282 : But [VAR PKNICK(0000)] can’t use the move!
+283 : The [VAR 010E(0000)] Grunts sent out a horde of Poochyena!
+284 : The [VAR 010E(0000)] Grunts sent out a horde of Mightyena!
+285 : You are challenged by [VAR 010E(0000)] [VAR TRNAME(0001)]!
+286 : You defeated [VAR 010E(0000)] [VAR TRNAME(0001)]!
+287 : [~ 287]

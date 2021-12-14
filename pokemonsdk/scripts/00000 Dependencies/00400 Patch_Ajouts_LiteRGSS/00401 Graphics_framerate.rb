@@ -5,6 +5,8 @@ module Graphics
   DT2 = DT - 1 / 600.0
   # Opposite of the time of a frame
   DTM = - DT
+  # Delta Time where frame balancing doesn't make sense at all
+  DT_NO_SENSE = 0.25
 
   @last_frame_count = 0
 
@@ -101,7 +103,6 @@ module Graphics
     @delta_time += (dt = Time.new - @ruby_time)
     update_ruby_time(dt) # Update the Ruby time counters to show the right FPS
     # Estimating frame duration
-    wakeup_log
     t = Time.new
     @update.call
     dt = Time.new - t # Time of the elapsed frame ~0.016
@@ -109,7 +110,9 @@ module Graphics
     dt -= DT # Substract the time of a constant frame if the result is > 0 we'll need to skip frames
     @delta_time += dt # Adding the difference
     # Try to balance the drawing
-    if @delta_time >= DT
+    if @delta_time >= DT_NO_SENSE || @delta_time < -5
+      frame_reset # In that case it makes no sense to balance FPS
+    elsif @delta_time >= DT
       @frame_to_skip = (@delta_time / DT).to_i
       @delta_time -= @frame_to_skip * DT
     elsif @delta_time <= DTM
@@ -131,7 +134,6 @@ module Graphics
     update_ruby_time(dt)
     # Estimating frame duration
     t = Time.new
-    wakeup_log
     @update.call
     dt = Time.new - t # Time of the elapsed frame ~0.016
     update_gc_time(dt) # Update the GPU time counters to show the right FPS
@@ -180,6 +182,9 @@ module Graphics
   # Change the color of the FPS texts
   # @param color [Integer] new color of the FPS texts
   def set_fps_color(color)
+    init_sprite if @ingame_fps_text.disposed?
+
+    @mouse.visible = color != 1 unless @no_mouse
     @ingame_fps_text.load_color(color)
     @gpu_fps_text.load_color(color)
     @ruby_fps_text.load_color(color)

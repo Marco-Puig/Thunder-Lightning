@@ -1,0 +1,2 @@
+0 : Give a nickname to the [VAR PKNAME(0000)] you caught?
+1 : [VAR PKNICK(0000)] has been transferred to [VAR BOX(0001)]!

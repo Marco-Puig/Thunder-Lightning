@@ -8,6 +8,7 @@ module Graphics
   @on_start = []
   @last_scene = nil
   @fps_balancing = true
+  @shitty_gpu = false
 
   module_function
 
@@ -71,10 +72,9 @@ module Graphics
 
   # Make the Graphics freeze
   def freeze
-    @mouse.visible = false unless @no_mouse
     set_fps_color(1)
     wait(6)
-    @freeze.call
+    @freeze.call unless running_on_shitty_gpu?
   end
 
   # Perform a Transition
@@ -82,9 +82,8 @@ module Graphics
   def transition(*args)
     Scheduler.start(:on_transition)
     sort_z
-    @transition.call(*args)
+    @transition.call(*args) unless running_on_shitty_gpu?
     set_fps_color(9)
-    @mouse.visible = true unless @no_mouse
     @ruby_time = Time.new
   end
 
@@ -101,6 +100,8 @@ module Graphics
     else
       @mouse.bitmap = Bitmap.new("\x89PNG\r\n\x1A\n\x00\x00\x00\rIHDR\x00\x00\x00\n\x00\x00\x00\x11\x04\x03\x00\x00\x00\x16\r \xD6\x00\x00\x00\x0FPLTENNN\xA3I\xA4\xE5\xE5\xE5\xD3\xD3\xD3\xC3\xC3\xC3RUt6\x00\x00\x00\x02tRNS\xFF\x00\xE5\xB70J\x00\x00\x00GIDATx\x015\xCA\xC1\t\xC40\fD\xD1/[\x05\xAC:XH\x03\x01\xA7\x00\x1F\xA6\xFF\x9A2\x16D\x87\a\x9F\x11Q>h\xC7\t\xC6\xBF\xBD\x1C\xCCu\xB7+\xDA}|\x14LI\x9B\x94\x80D^\xA9\xF4\x1Am\xD5\xCF?\x9F\xEE\x17sz\a\xBD\xEBds/\x00\x00\x00\x00IEND\xAEB`\x82", true)
     end
+
+    detect_gl_version
   end
 
   # Sort the Graphical element by their z coordinate (in the Graphic Stack)
@@ -154,5 +155,64 @@ module Graphics
         break
       end
     end
+  end
+
+  def detect_gl_version
+    return if PARGV[:"ignore-gpu-issue"] || PSDK_RUNNING_UNDER_MAC
+
+    version = openGL_version.join('.')
+    if version < '3.1'
+      @shitty_gpu = true
+      vp = Viewport.create(:main)
+      st = UI::SpriteStack.new(vp)
+      st.with_surface(8, 8, vp.rect.width - 16) do
+        st.add_line(0, "ERROR: Bad OpenGL Version (#{version})", 1, color: 10)
+        st.add_line(3, 'PSDK needs the following specification to run properly:', color: 10)
+        st.add_line(4, '  OpenGL Version: 3.1 minimum', color: 10)
+        st.add_line(5, '  Minimal CPU Requirement: i3-4005U / i7-4500U', color: 10)
+        st.add_line(6, '  Medium CPU Requirement: AMD Ryzen 5 2600', color: 10)
+        st.add_line(7, '  RAM: 2GB free (8GB installed on a Windows PC)', color: 10)
+        st.add_line(9, 'Please, upgrade your hardware...', color: 10)
+        st.add_line(11, 'Some feature will be disabled', 1, 1, color: 12)
+        st.add_line(13, 'Press [Action] to continue...', color: 10)
+      end
+      Graphics.update until Input.trigger?(:A)
+      vp.dispose
+      Viewport.class_eval do
+        def snap_to_bitmap
+          return Bitmap.new(32, 32)
+        end
+
+        def tone
+          return @tone ||= Tone.new(0, 0, 0, 0)
+        end
+
+        def color
+          return @color ||= Color.new(0, 0, 0, 0)
+        end
+
+        attr_writer :color, :tone
+        attr_accessor :shader
+      end
+      Graphics.module_eval do
+        module_function
+
+        def snap_to_bitmap
+          return Bitmap.new(32, 32)
+        end
+        class << self
+          attr_accessor :shader
+        end
+      end
+      ShaderedSprite.class_eval do
+        attr_accessor :shader
+      end
+    end
+  end
+
+  # Tell if the game is running on shitty gpu
+  # @return [Boolean]
+  def running_on_shitty_gpu?
+    return @shitty_gpu
   end
 end

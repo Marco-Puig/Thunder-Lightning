@@ -1,0 +1,6 @@
+0 : POKÉMON
+1 : POKÉDEX
+2 : BAG
+3 : [VAR TRNAME(0000)]
+4 : SAVE
+5 : OPTIONS

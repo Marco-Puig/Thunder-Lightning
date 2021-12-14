@@ -23,12 +23,17 @@ module Yuki
       log_debug(e.inspect)
       return if e.class == LiteRGSS::Graphics::ClosedWindowError
       raise if e.message.empty? || e.class.to_s == 'Reset'
+
       error_log = build_error_log(e)
       if io
         io << error_log
       else
         File.open('Error.log', 'wb') { |f| f << error_log }
-        try_graphic_display
+        puts <<~EODSP
+          The game crashed!
+          The error is stored in Error.log.
+        EODSP
+        system('pause')
       end
     end
 
@@ -39,6 +44,7 @@ module Yuki
       str = ''
       return build_system_stack_error_log(e, str) if e.is_a?(SystemStackError)
       return unless e.backtrace_locations
+
       source_arr = e.backtrace_locations[0]
       source_name = fix_source_path(source_arr.path.to_s)
       source_line = source_arr.lineno
@@ -49,6 +55,7 @@ module Yuki
       str << format("Script : %<script>s\r\n", script: source_name)
       str << format("Ligne : %<line>d\r\n", line: source_line)
       str << format("Date : %<date>s\r\n", date: Time.new.strftime('%d/%m/%Y %H:%M:%S'))
+      str << format("Game Version : %<game_version>s\r\n", game_version: PSDK_CONFIG.game_version)
       str << format("Logiciel : %<software>s %<version>s\r\n", software: Software, version: PSDK_Version.to_str_version)
       str << format("Script used by eval command : \r\n%<script>s\r\n\r\n", script: @eval_script) if @eval_script
       str << 'Backtraces'.center(80, '=')
@@ -92,26 +99,6 @@ module Yuki
       return @eval_script
     end
 
-    # Try to show the exception
-    def try_graphic_display
-      str = <<~EODSP
-        The game crashed!
-        We copied the error in the clipboard. You can also find it in Error.log
-      EODSP
-      begin
-        @vp = Viewport.create(:main, 100_000)
-        @vp.color = Color.new(255, 0, 0)
-        Text.new(0, vp, 0, 16, vp.rect.width, Font::FONT_SMALL, str, 1, 0, 10)
-      rescue StandardError
-        puts str
-        system('pause')
-        return
-      end
-      Graphics.wait(100)
-      Graphics.update until Input.trigger?(:C)
-      @vp.dispose
-    end
-
     # Build the SystemStackError message
     # @param e [SystemStackError]
     # @param str
@@ -119,6 +106,7 @@ module Yuki
       str << format("Message :\r\n%<message>s\r\n", message: e.message.to_s.gsub(/[\r\n]+/, "\r\n"))
       str << format("Type : %<type>s\r\n", type: e.class)
       str << format("Date : %<date>s\r\n", date: Time.new.strftime('%d/%m/%Y %H:%M:%S'))
+      str << format("Game Version : %<game_version>s\r\n", game_version: PSDK_CONFIG.game_version)
       str << format("Logiciel : %<software>s %<version>s\r\n", software: Software, version: PSDK_Version.to_str_version)
       str << format("Script used by eval command : \r\n%<script>s\r\n", script: @eval_script) if @eval_script
       str << (e.backtrace || ['Unkown Sources...']).join("\r\n")

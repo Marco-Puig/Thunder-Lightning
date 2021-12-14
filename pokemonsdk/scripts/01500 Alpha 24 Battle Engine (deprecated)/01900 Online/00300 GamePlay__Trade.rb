@@ -221,7 +221,7 @@ module GamePlay
 
     def trade_select_pokemon
       Graphics.freeze
-      scene = GamePlay::StorageTrade.new
+      scene = GamePlay::PokemonTradeStorage.new
       scene.main
       Graphics.transition
       return scene.return_data
@@ -236,10 +236,10 @@ module GamePlay
     end
 
     def evolve_check
-      id = @other_pokemon.evolve_check(:trade, @pokemon)
+      id, form = @other_pokemon.evolve_check(:trade, @pokemon)
       if id
         Graphics.freeze
-        scene = ::GamePlay::Evolve.new(@other_pokemon, id, true)
+        scene = ::GamePlay::Evolve.new(@other_pokemon, id, form, true)
         scene.main
       end
     end

@@ -32,8 +32,8 @@ en,fr,it,de,es,ko,kana
 [~ 30],[~ 30],[~ 30],[~ 30],[~ 30],[~ 30],[~ 30]
 [~ 31],[~ 31],[~ 31],[~ 31],[~ 31],[~ 31],[~ 31]
 [~ 32],[~ 32],[~ 32],[~ 32],[~ 32],[~ 32],[~ 32]
-[~ 33],[~ 33],[~ 33],[~ 33],[~ 33],[~ 33],[~ 33]
-[~ 34],[~ 34],[~ 34],[~ 34],[~ 34],[~ 34],[~ 34]
+Hooray Raichu!,[~ 33],[~ 33],[~ 33],[~ 33],[~ 33],[~ 33]
+I did it!,[~ 34],[~ 34],[~ 34],[~ 34],[~ 34],[~ 34]
 [~ 35],[~ 35],[~ 35],[~ 35],[~ 35],[~ 35],[~ 35]
 [~ 36],[~ 36],[~ 36],[~ 36],[~ 36],[~ 36],[~ 36]
 [~ 37],[~ 37],[~ 37],[~ 37],[~ 37],[~ 37],[~ 37]
@@ -169,6 +169,7 @@ NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
+How sad...,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
@@ -270,15 +271,14 @@ NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
+Alright! One step closer to becoming my very own Gym Leader!,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
 NewText,NewText,NewText,NewText,NewText,NewText,NewText
-NewText,NewText,NewText,NewText,NewText,NewText,NewText
-NewText,NewText,NewText,NewText,NewText,NewText,NewText
-NewText,NewText,NewText,NewText,NewText,NewText,NewText
-"","","","","","",""
-See? I told you I'd win!,NewText,NewText,NewText,NewText,NewText,NewText
+Told ya my pidgey was the best!,NewText,NewText,NewText,NewText,NewText,NewText
+Hmm.. seems you need more training.,"","","","","",""
+See! I told you I'd win!,NewText,NewText,NewText,NewText,NewText,NewText
 See! I told you I'd win!,"","","","","",""
-See? I told you I'd win!,NewText,NewText,NewText,NewText,NewText,NewText
+See! I told you I'd win!,NewText,NewText,NewText,NewText,NewText,NewText

@@ -38,7 +38,7 @@ module GamePlay
         text = ext_text(9000, 26)
       end
       @text = Text.new(0, viewport, 320, @sprite.y - 2, 
-        @sprite.bitmap.width-48, @sprite.bitmap.height, text).load_color(enabled ? 0 : 7)
+      @sprite.bitmap.width-48, @sprite.bitmap.height, text).load_color(enabled ? 0 : 7)
       @text.z = 3
       @disposed=false
       @selected=false

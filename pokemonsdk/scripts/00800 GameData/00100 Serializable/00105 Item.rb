@@ -2,10 +2,13 @@ module GameData
   # Item Data structure
   # @author Nuri Yuri
   class Item < Base
+    extend DataSource
     # Default icon name
     NO_ICON = 'return'
     # HM/TM text
     HM_TM_TEXT = '%s %s'
+    # List of get item ME
+    ItemGetME = %w[Audio/ME/ROSA_ItemObtained.ogg Audio/ME/ROSA_KeyItemObtained.ogg Audio/ME/ROSA_TMObtained.ogg]
     # Name of the item icon in Graphics/Icons/
     # @return [String]
     attr_accessor :icon
@@ -42,210 +45,54 @@ module GameData
     # Miscellaneous data of the item
     # @return [GameData::ItemMisc, nil]
     attr_accessor :misc_data
+
+    # Get the name
+    # @return [String]
+    def name
+      return text_get(12, @id) if Item.id_valid?(@id)
+
+      return text_get(12, 0)
+    end
+
+    # Get the "exact" name
+    # @return [String]
+    def exact_name
+      if (data = misc_data) && (data.ct_id || data.cs_id)
+        return format(HM_TM_TEXT, name, Skill[data.skill_learn.to_i].name)
+      end
+
+      return name
+    end
+
+    # Get the plural name
+    # @return [String]
+    def plural_name
+      return ext_text(9001, @id) if Item.id_valid?(@id)
+
+      return ext_text(9001, 0)
+    end
+
+    # Get the description
+    # @return [String]
+    def descr
+      return text_get(13, @id) if Item.id_valid?(@id)
+
+      return text_get(13, 0)
+    end
+
+    # Get the ME of the item when it's got
+    # @return [String]
+    def me
+      return ItemGetME[2] if socket == 3
+      return ItemGetME[1] if socket == 5
+
+      return ItemGetME[0]
+    end
+
     class << self
-      # Data of the items
-      @data = []
-
-      # Safely return the name of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [String]
-      def name(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return text_get(12, id) if id_valid?(id)
-        return text_get(12, 0)
-      end
-
-      # Safely return the exact name of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [String]
-      def exact_name(id)
-        # Process the HM/TM name
-        if (data = misc_data(id)) && (data.ct_id || data.cs_id)
-          return format(HM_TM_TEXT, name(id), Skill.name(data.skill_learn.to_i))
-        end
-        return name(id)
-      end
-
-      # Safely return the description of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [String]
-      def descr(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return text_get(13, id) if id_valid?(id)
-        return text_get(13, 0)
-      end
-
-      # Safely return the icon of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [String]
-      def icon(id)
-        return @data[id].icon if id_valid?(id)
-        return NO_ICON
-      end
-
-      # Safely return the price of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Integer]
-      def price(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].price if id_valid?(id)
-        return 0
-      end
-
-      # Safely return the pocket id of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Integer]
-      def pocket(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].socket if id_valid?(id)
-        return 0
-      end
-      alias socket pocket
-
-      # Safely return the battle_usable value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Boolean]
-      def battle_usable?(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].battle_usable if id_valid?(id)
-        return false
-      end
-
-      # Safely return the map_usable value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Boolean]
-      def map_usable?(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].map_usable if id_valid?(id)
-        return false
-      end
-
-      # Safely return the limited_use value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Boolean]
-      def limited_use?(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].limited if id_valid?(id)
-        return true
-      end
-
-      # Safely return the holdable value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Boolean]
-      def holdable?(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].holdable if id_valid?(id)
-        return false
-      end
-
-      # Safely return the sort position of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [Integer]
-      def position(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].position if id_valid?(id) && @data[id].position
-        return 99_999
-      end
-
-      # Safely return the heal_data value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [GameData::ItemHeal, nil]
-      def heal_data(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].heal_data if id_valid?(id)
-        return nil
-      end
-
-      # Safely return the ball_data value of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [GameData::BallData, nil]
-      def ball_data(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].ball_data if id_valid?(id)
-        return nil
-      end
-
-      # Safely return the misc_data of an item
-      # @param id [Integer, Symbol] id of the item in the database
-      # @return [GameData::ItemMisc, nil]
-      def misc_data(id)
-        id = get_id(id) if id.is_a?(Symbol)
-        return @data[id].misc_data if id_valid?(id)
-        return nil
-      end
-
-      # Safely return the db_symbol of an item
-      # @param id [Integer] id of the item in the database
-      # @return [Symbol]
-      def db_symbol(id)
-        return (@data[id].db_symbol || :__undef__) if id_valid?(id)
-        return :__undef__
-      end
-
-      # Find an item using symbol
-      # @param symbol [Symbol]
-      # @return [GameData::Item]
-      def find_using_symbol(symbol)
-        data = @data.find { |item| item.db_symbol == symbol }
-        return @data[0] unless data
-        data
-      end
-
-      # Get id using symbol
-      # @param symbol [Symbol]
-      # @return [Integer]
-      def get_id(symbol)
-        data = @data.index { |item| item.db_symbol == symbol }
-        data || 0
-      end
-
-      # Tell if the item id is valid
-      # @param id [Integer]
-      # @return [Boolean]
-      def id_valid?(id)
-        return id.between?(1, LAST_ID)
-      end
-
-      # Load the items
-      def load
-        @data = load_data('Data/PSDK/ItemData.rxdata').freeze
-        GameData::Item.const_set(:LAST_ID, @data.size - 1)
-      end
-
-      # Return all the item
-      # @return [Array<GameData::Item>]
-      def all
-        return @data
-      end
-
-      # Convert a collection to symbolized collection
-      # @param collection [Enumerable]
-      # @param keys [Boolean] if hash keys are converted
-      # @param values [Boolean] if hash values are converted
-      # @return [Enumerable] the collection
-      def convert_to_symbols(collection, keys: false, values: false)
-        if collection.is_a?(Hash)
-          new_collection = {}
-          collection.each do |key, value|
-            key = db_symbol(key) if keys && key.is_a?(Integer)
-            if value.is_a?(Enumerable)
-              value = convert_to_symbols(value, keys: keys, values: values)
-            elsif values && value.is_a?(Integer)
-              value = db_symbol(value)
-            end
-            new_collection[key] = value
-          end
-          collection = new_collection
-        else
-          collection.each_with_index do |value, index|
-            if value.is_a?(Enumerable)
-              collection[index] = convert_to_symbols(value, keys: keys, values: values)
-            elsif value.is_a?(Integer)
-              collection[index] = db_symbol(value)
-            end
-          end
-        end
-        collection
+      # Name of the file containing the data
+      def data_filename
+        return 'Data/PSDK/ItemData.rxdata'
       end
     end
   end

@@ -11,7 +11,7 @@ class Scene_Title
   # Entry point of the scene. If player hit X + B + UP the GamePlay::Load scene will ask the save deletion.
   def main
     data_load
-    title_animation unless debug? && ARGV.include?('skip_title')
+    title_animation unless debug? && (ARGV.include?('skip_title') || PSDK_CONFIG.skip_title_in_debug)
     if $scene == self
       Yuki::MapLinker.reset
       GamePlay::Load.new(#> Suppression de sauvegarde : X+B+Haut
@@ -38,6 +38,8 @@ class Scene_Title
   # Init the title screen sprites
   def init_sprites
     @viewport = Viewport.create(:main, 100)
+    @viewport.extend(Viewport::WithToneAndColors)
+    @viewport.shader = Shader.create(:map_shader)
     #@viewport.tone.set(-255, -255, -255, 0)
     @viewport.color.set(0, 0, 0, 255)
     @main_sprite = Sprite.new(@viewport)

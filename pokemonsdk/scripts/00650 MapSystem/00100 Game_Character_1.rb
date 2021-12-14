@@ -28,6 +28,12 @@ class Game_Character
   attr_reader :follower
   # @return [Boolean] if the character is sliding
   attr_reader :sliding
+  # If the direction is fixed
+  # @return [Boolean]
+  attr_reader :direction_fix
+  # If the character has reflection
+  # @return [Boolean]
+  attr_reader :reflection_enabled
 
   # Default initializer
   def initialize
@@ -71,8 +77,10 @@ class Game_Character
     @prelock_direction = 0
     @surfing = false # Variable indiquant si le chara est sur l'eau
     @sliding = false # Variable indiquant si le chara slide
+    @sliding_parameter = nil # Variable giving extra information for sliding
     @pattern_state = false # Indicateur de la direction du pattern
     @can_make_footprint = true
+    @reflection_enabled = true
   end
 
   # Set the move_frequency (and define the max_stop_count value)
@@ -112,8 +120,8 @@ class Game_Character
   # @param x [Integer] new x position of the character
   # @param y [Integer] new y position of the character
   def moveto(x, y)
-    @x = x % $game_map.width
-    @y = y % $game_map.height
+    @x = x # % $game_map.width # Removed because of new tilemap
+    @y = y # % $game_map.height
     @real_x = @x * 128
     @real_y = @y * 128
     @prelock_direction = 0
@@ -195,13 +203,13 @@ class Game_Character
   # Return the x position of the shadow of the character on the screen
   # @return [Integer]
   def shadow_screen_x
-    return (@real_x - $game_map.display_x + 5) / 8 + 8 # +3 => +5
+    return (@real_x - $game_map.display_x + 5) / 4 + 16 # +3 => +5
   end
 
   # Return the y position of the shadow of the character on the screen
   # @return [Integer]
   def shadow_screen_y
-    return (@real_y - $game_map.display_y + 5) / 8 + 17 + (@offset_shadow_screen_y || 0) / 2 + (@slope_offset_y || 0) / 2 # +3 => +5
+    return (@real_y - $game_map.display_y + 5) / 4 + 34 + (@offset_shadow_screen_y || 0) + (@slope_offset_y || 0) # +3 => +5
   end
 
   # Return the z superiority of the sprite of the character

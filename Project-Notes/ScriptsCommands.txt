@@ -1,0 +1,10 @@
+class Scene_Title
+  remove_const :INTRO_MOVIE_MAP_ID
+  INTRO_MOVIE_MAP_ID = id_of_the_map
+end
+
+It'll warp the player on the said map before the title and to show the title you'll have to enter the "return to title" event command
+
+compile:
+Game --util=project_compilation
+

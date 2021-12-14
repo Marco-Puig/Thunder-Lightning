@@ -217,6 +217,8 @@ module PFM
         pokemon.captured_with = female.captured_with
       end
 
+      inherit_form(pokemon, female, male)
+
       pokemon.nature = male.nature_id if male.item_db_symbol == :everstone
       pokemon.nature = female.nature_id if female.item_db_symbol == :everstone
 
@@ -250,8 +252,9 @@ module PFM
     # @param female [PFM::Pokemon]
     # @return [Array<GameData::Pokemon>]
     def get_pokemon_data(male, female)
-      return male.get_data, female.get_data unless USE_FIRST_FORM_BREED_GROUPS
-      return GameData::Pokemon.get_data(male.id, 0), GameData::Pokemon.get_data(female.id, 0)
+      return male.data, female.data unless USE_FIRST_FORM_BREED_GROUPS
+
+      return male.primary_data, female.primary_data
     end
 
     # Return the egg rate (% chance of having an egg)
@@ -269,6 +272,18 @@ module PFM
       common_ot = male.trainer_id == female.trainer_id
       oval_charm = $bag.contain_item?(:oval_charm)
       return EGG_RATE.dig(common_in_group.any?.to_i, common_ot.to_i, oval_charm.to_i) || 0
+    end
+
+    # Make the pokemon inherit its form
+    # @param pokemon [PFM::Pokemon]
+    # @param female [PFM::Pokemon]
+    # @param male [PFM::Pokemon]
+    def inherit_form(pokemon, female, male)
+      if (handler = GameData::Daycare::SPECIFIC_FORM_HANDLER[pokemon.db_symbol])
+        pokemon.form = handler.call(female, male) || female.form
+        return
+      end
+      pokemon.form = female.form
     end
 
     # Make the Pokemon inherit the female ability
@@ -302,7 +317,7 @@ module PFM
         learn_skill(pokemon, skill_id)
       end
       # Try to teach all the breed move known by the male
-      breed_moves = GameData::Pokemon.breed_moves(pokemon.id, pokemon.form).each do |skill_id|
+      breed_moves = GameData::Pokemon[pokemon.id, pokemon.form].breed_moves.each do |skill_id|
         next unless male.skill_learnt?(skill_id)
         learn_skill(pokemon, skill_id)
       end

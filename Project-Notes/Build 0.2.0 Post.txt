@@ -1,0 +1,9 @@
+Post new changes
+for example:
+Singleplayer: badges, playtime, areas, etc
+Multiplayer: N/A
+Engine: new engine, etc.
+
+For picture, use gif of rain on route 2 (similar to New Screenshot 1) 
+
+(also update icy cove to be made larger)

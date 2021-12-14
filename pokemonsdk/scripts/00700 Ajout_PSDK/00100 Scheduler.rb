@@ -5,7 +5,7 @@
 #   reason is one of the following reasons :
 #     on_update: during Graphics.update
 #     on_scene_switch: before going outside of the #main function of the scene (if called)
-#     on_dispose: during the dispose process (not called yet)
+#     on_dispose: during the dispose process
 #     on_init: at the begining of #main before Graphics.transition
 #     on_warp_start: at the begining of player warp process (first action)
 #     on_warp_process: after the player has been teleported but before the states has changed
@@ -31,7 +31,7 @@ module Scheduler
       on_warp_end: {},
       on_hour_update: {},
       on_getting_tileset_name: {},
-      on_transition: {},
+      on_transition: {}
     }
     @storage = {}
   end
@@ -44,9 +44,14 @@ module Scheduler
   def start(reason, klass = $scene.class)
     task_hash = @tasks[reason]
     return unless task_hash # Bad reason
-    start(reason, :any) if klass != :any
+
+    if klass != :any
+      start(reason, :any)
+      klass = klass.to_s
+    end
     task_array = task_hash[klass]
     return unless task_array # No task for this class
+
     task_array.each(&:start)
   end
 
@@ -56,10 +61,9 @@ module Scheduler
   # @param name [String] the name that describe the task
   # @param priority [Integer] its priority
   def __remove_task(reason, klass, name, priority)
-    task_hash = @tasks[reason]
-    return unless task_hash # Bad reason
-    task_array = task_hash[klass]
+    task_array = @tasks.dig(reason, klass.to_s)
     return unless task_array
+
     priority = -priority
     task_array.delete_if { |obj| obj.priority == priority && obj.name == name }
   end
@@ -71,6 +75,8 @@ module Scheduler
   def __add_task(reason, klass, task)
     task_hash = @tasks[reason]
     return unless task_hash # Bad reason
+
+    klass = klass.to_s unless klass.is_a?(Symbol)
     task_array = task_hash[klass] || []
     task_hash[klass] = task_array
     task_array << task
