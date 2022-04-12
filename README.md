@@ -1,5 +1,5 @@
 # Pokémon Thunder & Lightning!
-Open-Source Pokémon Game! Using PSDK as its backbone!
+Open-Source 2DRPG Game! Using PSDK as its backbone!
 
 ## Description
 
